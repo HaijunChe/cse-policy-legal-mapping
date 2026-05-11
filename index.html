@@ -1931,32 +1931,320 @@
       <i data-lucide="book-open" style="width:20px;height:20px;color:#F36F21;"></i>
       <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Transparency</span>
     </div>
-    <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Methodology & Limitations</h2>
-    <p style="font-size:0.95rem;color:#6B6B6B;margin-bottom:32px;">How this data was compiled and what to keep in mind.</p>
+    <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Methodology &amp; Limitations</h2>
+    <p style="font-size:0.95rem;color:#6B6B6B;max-width:700px;margin-bottom:32px;">How this data was compiled, why these 8 countries, and what to keep in mind when interpreting the dashboard.</p>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;">
-      <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(45,41,38,0.05);">
-        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i data-lucide="database" style="width:22px;height:22px;color:#F36F21;"></i></div>
-        <h3 style="font-size:1rem;font-weight:700;color:#2D2926;margin-bottom:10px;">Data Sources</h3>
-        <p style="font-size:0.85rem;color:#6B6B6B;line-height:1.65;">UNESCO GEM Report CSE Country Profiles (2023), PEER Education Profiles, UN Women Global Database on VAW, World Bank Women Business and the Law 2024, official national legislation.</p>
+    <!-- How to Interpret -->
+    <div style="background:linear-gradient(135deg,#FFF4EC 0%,#FFE8D6 100%);border-radius:16px;padding:24px 28px;margin-bottom:32px;border-left:4px solid #F36F21;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+        <i data-lucide="info" style="width:18px;height:18px;color:#F36F21;"></i>
+        <h3 style="font-size:1rem;font-weight:700;color:#2D2926;">How to Interpret This Dashboard</h3>
       </div>
-      <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(45,41,38,0.05);">
-        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i data-lucide="scale" style="width:22px;height:22px;color:#F36F21;"></i></div>
-        <h3 style="font-size:1rem;font-weight:700;color:#2D2926;margin-bottom:10px;">Definitions</h3>
-        <ul style="font-size:0.85rem;color:#6B6B6B;line-height:1.65;padding-left:1.1rem;">
-          <li><strong>Yes</strong>: CSE explicitly mandated with policy guidance.</li>
-          <li><strong>Partial</strong>: Exists but not branded CSE, or uneven.</li>
-          <li><strong>No</strong>: No national integration.</li>
-        </ul>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;font-size:0.85rem;color:#4A4A4A;line-height:1.6;">
+        <div><strong style="color:#F36F21;">1.</strong> Start with the <strong>4 stat cards</strong> for an overall snapshot.</div>
+        <div><strong style="color:#F36F21;">2.</strong> Browse the <strong>country grid</strong> — click any card for detailed profile.</div>
+        <div><strong style="color:#F36F21;">3.</strong> Use the <strong>interactive map</strong> to switch between CSE / Consent / GBV views.</div>
+        <div><strong style="color:#F36F21;">4.</strong> Every country detail includes <strong>data source links</strong> for verification.</div>
       </div>
-      <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(45,41,38,0.05);">
-        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><i data-lucide="alert-triangle" style="width:22px;height:22px;color:#F36F21;"></i></div>
-        <h3 style="font-size:1rem;font-weight:700;color:#2D2926;margin-bottom:10px;">Limitations</h3>
-        <ul style="font-size:0.85rem;color:#6B6B6B;line-height:1.65;padding-left:1.1rem;">
-          <li>Law vs. practice gap exists in many countries.</li>
-          <li>Federal systems show sub-national variation.</li>
-          <li>Static snapshot — reflects May 2026 state.</li>
-        </ul>
+    </div>
+
+    <!-- Country Selection Rationale -->
+    <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(45,41,38,0.05);margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;"><i data-lucide="target" style="width:22px;height:22px;color:#F36F21;"></i></div>
+        <h3 style="font-size:1.15rem;font-weight:700;color:#2D2926;">Why These 8 Countries?</h3>
+      </div>
+      <p style="font-size:0.9rem;color:#6B6B6B;line-height:1.65;margin-bottom:20px;">Countries were selected to balance three criteria: <strong>regional representativeness</strong> (4 UN sub-regions, 3 continents), <strong>policy spectrum diversity</strong> (progressive to restrictive), and <strong>data availability</strong> (presence in UNESCO GEM Report CSE profiles or UNFPA programme documents).</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+        <div style="background:#FAFAFA;border-radius:12px;padding:16px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <i data-lucide="globe-2" style="width:16px;height:16px;color:#10b981;"></i>
+            <strong style="font-size:0.88rem;color:#2D2926;">Regional Balance</strong>
+          </div>
+          <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.55;">Africa (Kenya, Ethiopia, Nigeria, South Africa), Asia (Indonesia, Philippines), Latin America (Colombia, Argentina) — capturing 4 UN sub-regions.</p>
+        </div>
+        <div style="background:#FAFAFA;border-radius:12px;padding:16px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <i data-lucide="layers" style="width:16px;height:16px;color:#f59e0b;"></i>
+            <strong style="font-size:0.88rem;color:#2D2926;">Policy Spectrum</strong>
+          </div>
+          <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.55;">From regional leaders (Argentina ESI Law 2006, Colombia) to embedded models (Kenya LSE, Nigeria FLHE) to restrictive contexts (Indonesia, Ethiopia).</p>
+        </div>
+        <div style="background:#FAFAFA;border-radius:12px;padding:16px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <i data-lucide="check-circle-2" style="width:16px;height:16px;color:#0066B3;"></i>
+            <strong style="font-size:0.88rem;color:#2D2926;">UNFPA Portfolio Alignment</strong>
+          </div>
+          <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.55;">Ethiopia (Phase 1 pilot) and Nigeria (Phase 2) are UNFPA out-of-school CSE focus countries — directly relevant to the consultancy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Sources (clickable cards) -->
+    <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(45,41,38,0.05);margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;"><i data-lucide="database" style="width:22px;height:22px;color:#F36F21;"></i></div>
+        <h3 style="font-size:1.15rem;font-weight:700;color:#2D2926;">Data Sources</h3>
+      </div>
+      <p style="font-size:0.85rem;color:#6B6B6B;margin-bottom:20px;">All data is sourced from publicly available, authoritative sources. Click any card to access the original dataset.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;">
+        <a href="https://unesdoc.unesco.org/ark:/48223/pf0000384494" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#0099CC;font-size:0.7rem;border:1px solid #E5E7EB;">UN</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">UNESCO GEM Report</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">CSE Country Profiles · 2023</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> CSE curriculum integration status, local naming, policy framework.</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+        <a href="https://education-profiles.org/themes/~comprehensive-sexuality-education" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#FBD123;font-size:0.65rem;border:1px solid #E5E7EB;">PEER</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">PEER Education Profiles</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">Country-level policy review · 2023</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> Cross-verification of CSE policy details and curriculum framing.</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+        <a href="https://evaw-global-database.unwomen.org/" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#E40046;font-size:0.55rem;border:1px solid #E5E7EB;">UNW</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">UN Women Global DB</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">Violence Against Women · 2024</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> GBV legal framework status, comprehensive legislation by country.</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+        <a href="https://wbl.worldbank.org/en/reports" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#002E5D;font-size:0.55rem;border:1px solid #E5E7EB;">WBL</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">World Bank — WBL</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">Women, Business and the Law · 2024</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> Age of consent, marriage age, GBV legislation cross-check.</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+        <a href="https://ilga.org/" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#7B1FA2;font-size:0.6rem;border:1px solid #E5E7EB;">ILGA</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">ILGA World Reports</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">State-Sponsored Homophobia · 2023</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> Age of consent comparative data and legal context.</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+        <a href="https://www.unfpa.org/comprehensive-sexuality-education" target="_blank" rel="noopener" style="display:block;background:#FAFAFA;border:1.5px solid #F3F4F6;border-radius:12px;padding:18px;text-decoration:none;color:inherit;transition:all 0.2s ease;" onmouseover="this.style.borderColor='#F36F21';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 16px rgba(45,41,38,0.08)';" onmouseout="this.style.borderColor='#F3F4F6';this.style.transform='translateY(0)';this.style.boxShadow='none';">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:white;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#F36F21;font-size:0.6rem;border:1px solid #E5E7EB;">UNFPA</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:#2D2926;">UNFPA Programme Documents</div>
+              <div style="font-size:0.72rem;color:#9CA3AF;">Country Programme Documents</div>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:#6B6B6B;line-height:1.5;margin-bottom:6px;"><strong>Used for:</strong> CSE programme phase information (Ethiopia Phase 1, Nigeria Phase 2).</p>
+          <span style="font-size:0.75rem;color:#F36F21;font-weight:600;display:inline-flex;align-items:center;gap:4px;">Visit <i data-lucide="external-link" style="width:12px;height:12px;"></i></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Legislation Timeline -->
+    <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(45,41,38,0.05);margin-bottom:24px;overflow:hidden;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;"><i data-lucide="milestone" style="width:22px;height:22px;color:#F36F21;"></i></div>
+        <h3 style="font-size:1.15rem;font-weight:700;color:#2D2926;">Key Legislation Timeline</h3>
+      </div>
+      <p style="font-size:0.85rem;color:#6B6B6B;margin-bottom:8px;">Major CSE and GBV legislation milestones across the 8 focus countries.</p>
+      <div style="display:flex;gap:14px;font-size:0.72rem;margin-bottom:20px;">
+        <span style="display:inline-flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:50%;background:#F36F21;"></span>CSE Legislation</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:50%;background:#10b981;"></span>GBV Legislation</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:50%;background:#8b5cf6;"></span>Both</span>
+      </div>
+      <div style="overflow-x:auto;padding:0 4px;">
+        <div style="position:relative;display:flex;align-items:center;min-width:1900px;padding:60px 20px;">
+          <div style="position:absolute;left:20px;right:20px;top:50%;height:3px;background:linear-gradient(90deg,#FFE8D6 0%,#F36F21 50%,#E05A0C 100%);border-radius:2px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #F36F21;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇨🇴</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">1994</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">General Education Law 115/1994 makes sexuality education compulsory</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#F36F21;border:3px solid white;box-shadow:0 0 0 1px #F36F21;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇨🇴</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">1996</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Law 294/1996 Domestic Violence Law</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇿🇦</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">1998</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Domestic Violence Act enacted</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#F36F21;border:3px solid white;box-shadow:0 0 0 1px #F36F21;z-index:2;"></div>
+          <div style="background:white;border:2px solid #F36F21;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇳🇬</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2001</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">FLHE curriculum approved by NCE</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #F36F21;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇦🇷</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2006</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">ESI Law 26.150 - Comprehensive Sexuality Education</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#F36F21;border:3px solid white;box-shadow:0 0 0 1px #F36F21;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇰🇪</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2006</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Sexual Offences Act enacted</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #8b5cf6;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇿🇦</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#8b5cf6;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2007</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Sexual Offences Amendment Act - age of consent 16</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#8b5cf6;border:3px solid white;box-shadow:0 0 0 1px #8b5cf6;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇨🇴</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2008</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Law 1257/2008 - Comprehensive Law on VAW</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇦🇷</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2009</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">Law 26.485 - Integral Protection for Women</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#F36F21;border:3px solid white;box-shadow:0 0 0 1px #F36F21;z-index:2;"></div>
+          <div style="background:white;border:2px solid #F36F21;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇵🇭</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2012</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">RPRH Act - Reproductive Health Law</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇳🇬</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2015</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">VAPP Act - Violence Against Persons (Prohibition)</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#F36F21;border:3px solid white;box-shadow:0 0 0 1px #F36F21;z-index:2;"></div>
+          <div style="background:white;border:2px solid #F36F21;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇵🇭</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2018</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">DepEd Order 31 - CSE Policy Guidelines</div>
+          </div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;">
+          <div style="background:white;border:2px solid #8b5cf6;border-radius:10px;padding:8px 12px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇵🇭</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#8b5cf6;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2022</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">RA 11648 - Age of consent raised from 12 to 16</div>
+          </div>
+          <div style="position:absolute;top:calc(50% + 12px);width:14px;height:14px;border-radius:50%;background:#8b5cf6;border:3px solid white;box-shadow:0 0 0 1px #8b5cf6;z-index:2;"></div>
+        </div><div style="display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;justify-content:flex-end;">
+          <div style="position:absolute;top:calc(50% - 6px);width:14px;height:14px;border-radius:50%;background:#10b981;border:3px solid white;box-shadow:0 0 0 1px #10b981;z-index:2;"></div>
+          <div style="background:white;border:2px solid #10b981;border-radius:10px;padding:8px 12px;margin-top:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);text-align:center;">
+            <div style="font-size:1.05rem;">🇮🇩</div>
+            <div style="font-size:0.7rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;">2022</div>
+            <div style="font-size:0.68rem;color:#6B6B6B;line-height:1.3;margin-top:3px;max-width:130px;">UU TPKS - Sexual Violence Crimes Law</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Definitions -->
+    <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(45,41,38,0.05);margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;"><i data-lucide="scale" style="width:22px;height:22px;color:#F36F21;"></i></div>
+        <h3 style="font-size:1.15rem;font-weight:700;color:#2D2926;">Definitions &amp; Scoring</h3>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+        <div style="background:#ECFDF5;border-left:3px solid #10b981;border-radius:8px;padding:14px 16px;">
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#10b981;">Yes</span>
+          <p style="font-size:0.82rem;color:#4A4A4A;margin-top:6px;line-height:1.55;">CSE explicitly mandated by national policy with clear implementation guidance and curriculum framework.</p>
+        </div>
+        <div style="background:#FFFBEB;border-left:3px solid #f59e0b;border-radius:8px;padding:14px 16px;">
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#f59e0b;">Partial</span>
+          <p style="font-size:0.82rem;color:#4A4A4A;margin-top:6px;line-height:1.55;">Sexuality education exists but not branded as CSE, or implementation is uneven across regions/states.</p>
+        </div>
+        <div style="background:#FEF2F2;border-left:3px solid #ef4444;border-radius:8px;padding:14px 16px;">
+          <span style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#ef4444;">No</span>
+          <p style="font-size:0.82rem;color:#4A4A4A;margin-top:6px;line-height:1.55;">No national-level integration of sexuality education into school curricula.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Limitations with Examples -->
+    <div style="background:white;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(45,41,38,0.05);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <div style="width:44px;height:44px;background:#FFF4EC;border-radius:8px;display:flex;align-items:center;justify-content:center;"><i data-lucide="alert-triangle" style="width:22px;height:22px;color:#F36F21;"></i></div>
+        <h3 style="font-size:1.15rem;font-weight:700;color:#2D2926;">Limitations &amp; Important Caveats</h3>
+      </div>
+      <p style="font-size:0.85rem;color:#6B6B6B;margin-bottom:20px;">Each limitation is illustrated with a real example from the dataset.</p>
+      <div style="display:grid;gap:14px;">
+        <div style="background:#FAFAFA;border-radius:12px;padding:18px;border-left:3px solid #ef4444;">
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <i data-lucide="alert-octagon" style="width:18px;height:18px;color:#ef4444;flex-shrink:0;margin-top:2px;"></i>
+            <div style="flex:1;">
+              <strong style="font-size:0.92rem;color:#2D2926;">Law vs. Practice Gap</strong>
+              <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.6;margin-top:4px;">Legal existence does not guarantee real-world protection.</p>
+              <p style="font-size:0.8rem;color:#4A4A4A;line-height:1.6;margin-top:8px;background:white;padding:10px 12px;border-radius:6px;"><strong style="color:#ef4444;">Example:</strong> South Africa has one of the most comprehensive GBV legal frameworks on the continent (Domestic Violence Act 1998, Sexual Offences Act 2007), yet GBV prevalence remains among the world&rsquo;s highest. Comprehensive law &ne; effective protection.</p>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FAFAFA;border-radius:12px;padding:18px;border-left:3px solid #f59e0b;">
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <i data-lucide="layers" style="width:18px;height:18px;color:#f59e0b;flex-shrink:0;margin-top:2px;"></i>
+            <div style="flex:1;">
+              <strong style="font-size:0.92rem;color:#2D2926;">Sub-national Variation</strong>
+              <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.6;margin-top:4px;">Federal or decentralised systems show significant intra-country differences not captured at the national level.</p>
+              <p style="font-size:0.8rem;color:#4A4A4A;line-height:1.6;margin-top:8px;background:white;padding:10px 12px;border-radius:6px;"><strong style="color:#f59e0b;">Example:</strong> Nigeria&rsquo;s VAPP Act (2015) is comprehensive at the federal level, but only ~15 of 36 states have domesticated it. Some northern states rely on Sharia-based alternatives that do not provide equivalent protections.</p>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FAFAFA;border-radius:12px;padding:18px;border-left:3px solid #8b5cf6;">
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <i data-lucide="git-compare" style="width:18px;height:18px;color:#8b5cf6;flex-shrink:0;margin-top:2px;"></i>
+            <div style="flex:1;">
+              <strong style="font-size:0.92rem;color:#2D2926;">Definitional Comparability</strong>
+              <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.6;margin-top:4px;">&quot;Age of consent&quot; and &quot;CSE&quot; are not defined identically across legal systems.</p>
+              <p style="font-size:0.8rem;color:#4A4A4A;line-height:1.6;margin-top:8px;background:white;padding:10px 12px;border-radius:6px;"><strong style="color:#8b5cf6;">Example:</strong> Argentina&rsquo;s age of consent is 13, but the law includes a critical caveat &mdash; sexual activity with persons aged 13-15 is lawful only where there is no &quot;abuse&quot; or &quot;taking advantage&quot; of the minor. The raw number does not capture this nuance.</p>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FAFAFA;border-radius:12px;padding:18px;border-left:3px solid #0066B3;">
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <i data-lucide="clock" style="width:18px;height:18px;color:#0066B3;flex-shrink:0;margin-top:2px;"></i>
+            <div style="flex:1;">
+              <strong style="font-size:0.92rem;color:#2D2926;">Static Snapshot</strong>
+              <p style="font-size:0.82rem;color:#6B6B6B;line-height:1.6;margin-top:4px;">Legal landscapes change. This snapshot reflects information available as of May 2026.</p>
+              <p style="font-size:0.8rem;color:#4A4A4A;line-height:1.6;margin-top:8px;background:white;padding:10px 12px;border-radius:6px;"><strong style="color:#0066B3;">Example:</strong> Philippines raised its age of consent from 12 to 16 in 2022 (RA 11648). Indonesia enacted its TPKS Sexual Violence Law in 2022. Dashboards built before 2022 would show outdated information.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
