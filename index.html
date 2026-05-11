@@ -1872,6 +1872,97 @@
     </div>
   </section>
 
+
+
+  <!-- Charts Section -->
+  <section style="padding:60px 40px;background:#FAFAFA;" class="fade-up">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+        <i data-lucide="pie-chart" style="width:20px;height:20px;color:var(--unfpa-orange);"></i>
+        <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--unfpa-orange);">Visual Analysis</span>
+      </div>
+      <h2 style="font-size:1.6rem;font-weight:800;color:var(--unfpa-navy);margin-bottom:8px;">Data Insights</h2>
+      <p style="font-size:0.95rem;color:var(--unfpa-warm-gray);margin-bottom:32px;">Distribution and comparison of key indicators across the 8 focus countries.</p>
+      <div class="dashboard-grid">
+        <div class="card">
+          <div style="padding:20px 24px 16px;border-bottom:1px solid var(--border-light);">
+            <h3 style="font-size:1rem;font-weight:700;color:var(--unfpa-navy);display:flex;align-items:center;gap:8px;">
+              <i data-lucide="pie-chart" style="width:18px;height:18px;color:var(--unfpa-orange);"></i> CSE Integration Status
+            </h3>
+          </div>
+          <div id="cseDonutChart" style="height:320px;"></div>
+        </div>
+        <div class="card">
+          <div style="padding:20px 24px 16px;border-bottom:1px solid var(--border-light);">
+            <h3 style="font-size:1rem;font-weight:700;color:var(--unfpa-navy);display:flex;align-items:center;gap:8px;">
+              <i data-lucide="bar-chart-3" style="width:18px;height:18px;color:var(--unfpa-orange);"></i> Age of Consent by Country
+            </h3>
+          </div>
+          <div id="consentBarChart" style="height:320px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Global Impact Map -->
+  <section style="padding:80px 40px;background:linear-gradient(135deg,#1a3a5c 0%,#0d2137 100%);color:white;position:relative;overflow:hidden;" class="fade-up">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 20% 40%,rgba(243,111,33,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+    <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1;">
+      <div style="text-align:center;margin-bottom:48px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);padding:8px 20px;border-radius:100px;font-size:0.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px;">
+          <i data-lucide="globe" style="width:13px;height:13px;"></i> Global Coverage
+        </div>
+        <h2 style="font-size:2rem;font-weight:800;margin-bottom:12px;">8 Countries, 3 Continents</h2>
+        <p style="font-size:1rem;opacity:0.75;max-width:500px;margin:0 auto;line-height:1.7;">From Nairobi to Buenos Aires -- mapping CSE policy across Africa, Asia, and Latin America.</p>
+      </div>
+      <div style="display:flex;justify-content:center;">
+        <svg viewBox="0 0 1000 450" style="width:100%;max-width:900px;height:auto;">
+          <defs>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#F36F21;stop-opacity:0.8" />
+              <stop offset="100%" style="stop-color:#F36F21;stop-opacity:0.2" />
+            </linearGradient>
+          </defs>
+          <g>
+            <circle cx="520" cy="250" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+            <circle cx="530" cy="240" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/></circle>
+            <circle cx="210" cy="150" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/></circle>
+            <circle cx="200" cy="160" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/></circle>
+            <circle cx="750" cy="180" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.3s" repeatCount="indefinite"/></circle>
+            <circle cx="740" cy="190" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.1s" repeatCount="indefinite"/></circle>
+            <circle cx="280" cy="320" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="1.9s" repeatCount="indefinite"/></circle>
+            <circle cx="290" cy="310" r="3" fill="#F36F21" opacity="0.6"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/></circle>
+            <circle cx="128" cy="126" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="133" cy="172" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="101" cy="148" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="177" cy="147" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="164" cy="154" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="131" cy="144" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="146" cy="86" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="70" cy="135" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="87" cy="146" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="127" cy="93" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="82" cy="97" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="126" cy="140" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="73" cy="89" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="224" cy="156" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="116" cy="76" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="105" cy="123" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="235" cy="146" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="132" cy="99" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="233" cy="101" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="79" cy="95" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="550" cy="160" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="560" cy="150" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="570" cy="170" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="580" cy="140" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="750" cy="200" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="760" cy="190" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="770" cy="210" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="780" cy="180" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="850" cy="250" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="860" cy="240" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="280" cy="80" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="290" cy="70" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="450" cy="120" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="460" cy="110" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="350" cy="300" r="2.5" fill="#F36F21" opacity="0.3"/><circle cx="360" cy="290" r="2.5" fill="#F36F21" opacity="0.3"/>
+            <circle cx="520" cy="250" r="8" fill="none" stroke="#F36F21" stroke-width="2" opacity="0.8"><animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/></circle>
+            <circle cx="520" cy="250" r="6" fill="#F36F21" opacity="0.9"/>
+            <text x="520" y="225" text-anchor="middle" fill="#F36F21" font-size="11" font-weight="600">Africa</text>
+            <circle cx="750" cy="180" r="8" fill="none" stroke="#F36F21" stroke-width="2" opacity="0.8"><animate attributeName="r" values="8;14;8" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite"/></circle>
+            <circle cx="750" cy="180" r="6" fill="#F36F21" opacity="0.9"/>
+            <text x="750" y="165" text-anchor="middle" fill="#F36F21" font-size="11" font-weight="600">Asia</text>
+            <circle cx="280" cy="320" r="8" fill="none" stroke="#F36F21" stroke-width="2" opacity="0.8"><animate attributeName="r" values="8;14;8" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.2s" repeatCount="indefinite"/></circle>
+            <circle cx="280" cy="320" r="6" fill="#F36F21" opacity="0.9"/>
+            <text x="280" y="340" text-anchor="middle" fill="#F36F21" font-size="11" font-weight="600">S. America</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer style="background:var(--unfpa-navy);color:rgba(255,255,255,0.6);padding:32px 40px;">
     <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
@@ -2034,10 +2125,60 @@
     let map = null;
     let selectedIso = null;
 
+    function renderCharts() {
+      // CSE Status Donut Chart
+      const statusCounts = {yes: 0, partial: 0, no: 0};
+      cseData.forEach(c => { if (statusCounts[c.cse_status] !== undefined) statusCounts[c.cse_status]++; });
+      const donutData = [{
+        values: [statusCounts.yes, statusCounts.partial, statusCounts.no],
+        labels: ['Yes', 'Partial', 'No'],
+        type: 'pie',
+        hole: 0.55,
+        marker: {colors: ['#10b981', '#f59e0b', '#ef4444']},
+        textinfo: 'label+percent',
+        textposition: 'outside',
+        automargin: true
+      }];
+      Plotly.newPlot('cseDonutChart', donutData, {
+        margin: {t: 20, b: 20, l: 20, r: 20},
+        showlegend: false,
+        font: {family: 'Inter, sans-serif'}
+      }, {responsive: true, displayModeBar: false});
+
+      // Age of Consent Bar Chart
+      const sorted = [...cseData].sort((a, b) => {
+        const av = typeof a.consent === 'number' ? a.consent : 99;
+        const bv = typeof b.consent === 'number' ? b.consent : 99;
+        return bv - av;
+      });
+      const barData = [{
+        x: sorted.map(c => c.name),
+        y: sorted.map(c => typeof c.consent === 'number' ? c.consent : 0),
+        type: 'bar',
+        marker: {
+          color: sorted.map(c => {
+            if (c.consent === 'mixed') return '#6B7280';
+            return c.consent >= 16 ? '#10b981' : c.consent >= 14 ? '#f59e0b' : '#ef4444';
+          })
+        },
+        text: sorted.map(c => String(c.consent)),
+        textposition: 'auto'
+      }];
+      Plotly.newPlot('consentBarChart', barData, {
+        margin: {t: 20, b: 60, l: 40, r: 20},
+        yaxis: {title: 'Age', range: [0, 20]},
+        xaxis: {tickangle: -30},
+        font: {family: 'Inter, sans-serif'},
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        paper_bgcolor: 'rgba(0,0,0,0)'
+      }, {responsive: true, displayModeBar: false});
+    }
+
     function init() {
       renderStats();
       initMap();
       renderTable();
+      renderCharts();
       if (cseData.length > 0) showDetail(cseData[0]);
       lucide.createIcons();
     }
