@@ -349,7 +349,7 @@
       letter-spacing: -2px;
       margin-bottom: 20px;
       line-height: 1.05;
-      max-width: 800px;
+      max-width: 1100px;
       text-shadow: 0 4px 30px rgba(0,0,0,0.3);
     }
     @media (max-width: 768px) {
@@ -359,7 +359,7 @@
     .hero-subtitle {
       font-size: 1.2rem;
       opacity: 0.8;
-      max-width: 580px;
+      max-width: 850px;
       line-height: 1.7;
       margin-bottom: 36px;
       font-weight: 300;
@@ -1781,7 +1781,16 @@
   <nav class="navbar">
     <div class="navbar-inner">
       <a href="https://www.unfpa.org" target="_blank" rel="noopener" class="navbar-brand" style="text-decoration:none;">
-        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2060%22%20style%3D%22height%3A42px%3Bwidth%3Aauto%3B%22%3E%3Cg%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2220%22%20fill%3D%22%23F36F21%22/%3E%3Cpath%20d%3D%22M22%2028%20L30%2022%20L38%2028%20L38%2038%20L34%2038%20L34%2032%20L26%2032%20L26%2038%20L22%2038%20Z%22%20fill%3D%22white%22/%3E%3C/g%3E%3Ctext%20x%3D%2260%22%20y%3D%2238%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2222%22%20fill%3D%22%232D2926%22%20letter-spacing%3D%220.5%22%3EUNFPA%3C/text%3E%3C/svg%3E" alt="UNFPA" style="height:42px;width:auto;">
+        <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+          <div style="width:40px;height:40px;background:#F36F21;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z" fill="white"/>
+              <path d="M12 6l-4 2.5v5L12 16l4-2.5v-5L12 6z" fill="#F36F21"/>
+              <circle cx="12" cy="11" r="2" fill="white"/>
+            </svg>
+          </div>
+          <span style="font-size:1.15rem;font-weight:800;color:#2D2926;letter-spacing:0.5px;">UNFPA</span>
+        </div>
         <span class="navbar-brand-text" style="border-left:1.5px solid #E5E7EB;padding-left:14px;margin-left:4px;line-height:1.3;">
           <strong style="font-size:0.95rem;color:#2D2926;display:block;">CSE Policy Mapping</strong>
           <span style="font-size:0.78rem;color:#9CA3AF;">8-Country Snapshot &middot; 2026</span>
@@ -1807,7 +1816,7 @@
         <i data-lucide="shield-check" style="width:13px;height:13px;"></i>
         UNFPA CONSULTANCY · HOMEWORK ASSIGNMENT
       </div>
-      <h1>CSE Policy & Legal<br>Environment Mapping</h1>
+      <h1>CSE Policy &amp; Legal Environment Mapping</h1>
       <p class="hero-subtitle">An interactive snapshot of the policy and legal landscape for Comprehensive Sexuality Education across 8 countries in Africa, Asia, and Latin America — curriculum integration, age of consent, and GBV legal frameworks.</p>
       <div class="hero-ctas">
         <a href="#cse-systems" class="hero-cta-primary">
@@ -2677,10 +2686,29 @@
   </section>
 
   <!-- Footer -->
-  <footer style="background:#2D2926;color:rgba(255,255,255,0.6);padding:32px 40px;">
-    <div style="max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-      <p style="font-size:0.85rem;">CSE Policy & Legal Environment — UNFPA Data Analytics & Visualization Consultancy</p>
-      <p style="font-size:0.8rem;opacity:0.7;">Haijun Che · May 2026</p>
+  <footer style="background:#2D2926;color:rgba(255,255,255,0.6);padding:40px 40px 32px;">
+    <div style="max-width:1400px;margin:0 auto;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:16px;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:36px;height:36px;background:#F36F21;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z" fill="white"/>
+              <path d="M12 6l-4 2.5v5L12 16l4-2.5v-5L12 6z" fill="#F36F21"/>
+              <circle cx="12" cy="11" r="2" fill="white"/>
+            </svg>
+          </div>
+          <span style="font-size:1rem;font-weight:800;color:rgba(255,255,255,0.9);letter-spacing:0.5px;">UNFPA</span>
+        </div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;">
+          <a href="https://www.unfpa.org" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(255,255,255,0.5);text-decoration:none;font-weight:500;">UNFPA.org</a>
+          <a href="https://github.com/haijunche/cse-policy-legal-mapping" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(255,255,255,0.5);text-decoration:none;font-weight:500;">GitHub</a>
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,0.1);margin-bottom:20px;"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <p style="font-size:0.85rem;">CSE Policy & Legal Environment — UNFPA Data Analytics & Visualization Consultancy</p>
+        <p style="font-size:0.8rem;opacity:0.7;">Haijun Che · May 2026</p>
+      </div>
     </div>
   </footer>
 
