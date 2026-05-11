@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "title": "CSE Policy & Legal Environment — 8 Country Snapshot",
+    "data_cutoff": "2026-05-11",
+    "note": "All data points sourced from publicly available, credible sources. Where information is incomplete or not directly comparable, this is noted explicitly."
+  },
+  "countries": [
+    {
+      "iso": "KE",
+      "name": "Kenya",
+      "region": "Eastern Africa",
+      "coordinates": [-1.2921, 36.8219],
+      "cse": {
+        "status": "partial",
+        "local_name": "Life Skills Education (LSE) — sexuality education components",
+        "details": "Sexuality education is integrated into the primary and secondary school curriculum through Life Skills Education (LSE), not explicitly branded as CSE. Kenya adapted UNESCO's ITGSE to the local context in 2016–2017. The government has budgeted for CSE programme implementation.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "PEER Education Profiles — CSE",
+            "url": "https://education-profiles.org/themes/~comprehensive-sexuality-education"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 18,
+        "details": "The Penal Code (Cap 63, Section 8) sets the age of consent at 18. Marriage below this age is unlawful, though child marriage rates remain significant in certain counties.",
+        "sources": [
+          {
+            "name": "Kenya Penal Code (Cap 63)",
+            "url": "https://klrc.go.ke/penal-code-cap-63/"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Sexual Offences Act (2006); Protection Against Domestic Violence Act (2015); National Policy on Prevention and Response to GBV (2014)",
+        "details": "Kenya has a comprehensive legal and policy framework addressing sexual violence and domestic violence. The National Policy on Prevention and Response to GBV was adopted in 2014. A dedicated GBV Task Force was established in 2024.",
+        "sources": [
+          {
+            "name": "Government of Kenya, National Policy on Prevention and Response to GBV",
+            "url": "https://www.gender.go.ke/sites/default/files/publications/National-Policy-on-prevention-and-Response-to-GBV.pdf"
+          },
+          {
+            "name": "UN Women Global Database on VAW",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/africa/kenya"
+          }
+        ]
+      },
+      "caveats": "Implementation of CSE in schools faces resistance from some faith-based and community groups, leading to uneven rollout across counties."
+    },
+    {
+      "iso": "ET",
+      "name": "Ethiopia",
+      "region": "Eastern Africa",
+      "coordinates": [9.145, 40.4897],
+      "cse": {
+        "status": "partial",
+        "local_name": "HIV/AIDS and Reproductive Health Education",
+        "details": "Sexuality education is not explicitly branded as CSE. It is delivered primarily through HIV/AIDS and reproductive health education channels. Ethiopia was a Phase 1 pilot country (2020–2022) in UNFPA's multi-country out-of-school CSE adaptation initiative.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "UNFPA Out-of-School CSE Implementation Research",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10431723/"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 18,
+        "details": "The Criminal Code (Article 626) sets the minimum age for sexual consent at 18. However, child marriage remains prevalent in rural areas, with enforcement uneven.",
+        "sources": [
+          {
+            "name": "Ethiopian Criminal Code (Federal Negarit Gazeta)",
+            "url": "https://www.ilo.org/dyn/natlex/docs/SERIAL/70976/75069/F1429730918/ETH70976.pdf"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Criminal Code (Arts. 556–562 on sexual offenses); Family Code Reform (2000); National Action Plan on VAW",
+        "details": "Ethiopia's Criminal Code criminalizes sexual violence and includes specific provisions on rape, abduction, and sexual assault. The Family Code (2000) raised the minimum marriage age to 18. A National Action Plan on Violence Against Women and Girls exists.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — Ethiopia",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/africa/ethiopia"
+          },
+          {
+            "name": "World Bank Women, Business and the Law 2024",
+            "url": "https://wbl.worldbank.org/en/reports"
+          }
+        ]
+      },
+      "caveats": "Cultural and religious norms significantly affect both the content of sexuality education and enforcement of GBV and age-of-consent laws, particularly in rural areas."
+    },
+    {
+      "iso": "NG",
+      "name": "Nigeria",
+      "region": "Western Africa",
+      "coordinates": [9.082, 7.6753],
+      "cse": {
+        "status": "partial",
+        "local_name": "Family Life and HIV Education (FLHE)",
+        "details": "The National Council on Education formally approved FLHE in 2001. It is not branded as CSE. Nigeria was a Phase 2 country (2022–2024) in UNFPA's out-of-school CSE adaptation initiative. Implementation varies significantly between states.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "UNESCO Out-of-School CSE Technical Guidance",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10431723/"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": "mixed",
+        "details": "Nigeria operates a dual legal system. The Criminal Code (southern states) sets the age at 16; the Penal Code (northern states) uses puberty as the threshold. The Child Rights Act 2003 (federal) sets the age at 18, but adoption by states is uneven (~30 states have adopted as of 2024).",
+        "sources": [
+          {
+            "name": "ECPAT International — Nigeria Country Profile",
+            "url": "https://ecpat.org/country/nigeria/"
+          },
+          {
+            "name": "Stand To End Rape — Age of Consent in Nigeria",
+            "url": "https://standtoendrape.org/whats-the-age-of-consent-in-nigeria/"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "partial",
+        "law_name": "Violence Against Persons (Prohibition) Act (VAPP Act, 2015)",
+        "details": "The VAPP Act 2015 provides comprehensive GBV legislation at the federal level. However, state-level adoption is incomplete (approximately 15+ states have domesticated the law). Some northern states rely on Sharia-based alternatives that do not provide equivalent protections.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — Nigeria",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/africa/nigeria"
+          },
+          {
+            "name": "CFHI Initiative — Systemic Barriers to Eliminating GBV in Nigeria",
+            "url": "https://www.cfhinitiative.org/systemic-barriers-to-eliminating-gbv-in-nigeria/"
+          }
+        ]
+      },
+      "caveats": "Nigeria's federal structure creates significant variation between states. CSE implementation, age-of-consent enforcement, and GBV protections are strongest in states that have adopted federal frameworks and weakest in those that have not."
+    },
+    {
+      "iso": "ZA",
+      "name": "South Africa",
+      "region": "Southern Africa",
+      "coordinates": [-33.9249, 18.4241],
+      "cse": {
+        "status": "partial",
+        "local_name": "Life Orientation (LO) — sexuality education components",
+        "details": "Sexuality education is integrated into the Life Orientation curriculum at all school levels. While comprehensive in scope, implementation quality is reported to be uneven, with concerns about teacher training and cultural resistance in some communities.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "Department of Basic Education, South Africa — CSE Policy",
+            "url": "https://www.education.gov.za/Programmes/LifeOrientation.aspx"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 16,
+        "details": "The Criminal Law (Sexual Offences and Related Matters) Amendment Act 2007 sets the age of consent at 16. Sexual activity with persons under 16 is criminalised regardless of consent.",
+        "sources": [
+          {
+            "name": "Criminal Law (Sexual Offences and Related Matters) Amendment Act 2007",
+            "url": "https://www.gov.za/documents/sexual-offences-act"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Domestic Violence Act (1998); Criminal Law (Sexual Offences) Amendment Act (2007); Protection from Harassment Act (2011)",
+        "details": "South Africa has one of the most comprehensive GBV legal frameworks on the continent. However, prevalence rates remain among the world's highest, indicating a significant implementation gap between law and practice. The National Strategic Plan on GBV 2020–2030 was launched to address this.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — South Africa",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/africa/south-africa"
+          },
+          {
+            "name": "Government of South Africa — National Strategic Plan on GBV",
+            "url": "https://www.gov.za/documents/national-strategic-plan-gender-based-violence-and-femicide-2020-2030-23-apr-2020"
+          }
+        ]
+      },
+      "caveats": "South Africa demonstrates a significant 'law vs. practice' gap: comprehensive laws exist, but GBV prevalence remains extremely high. This highlights the limitation of using legal existence as a proxy for real-world protection."
+    },
+    {
+      "iso": "ID",
+      "name": "Indonesia",
+      "region": "South-Eastern Asia",
+      "coordinates": [-6.2088, 106.8456],
+      "cse": {
+        "status": "partial",
+        "local_name": "Pendidikan Kesehatan Reproduksi (PKR) / Reproductive Health Education",
+        "details": "Sexuality education is not systematically integrated. Reproductive health education exists in the national curriculum but is often limited to biology and abstinence-based messaging. Strong religious and cultural opposition has hindered comprehensive approaches.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "IPPF — Sexual and Reproductive Health Rights in Indonesia",
+            "url": "https://www.ippf.org/our-work/what-we-do/srhr-emergencies"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 16,
+        "details": "The minimum age for marriage was raised to 19 for both sexes in 2019 (revised Marriage Law). The Criminal Code does not explicitly define a standalone age of sexual consent; enforcement relies on marriage-age provisions and sexual violence statutes. The TPKS Law (2022) defines sexual violence broadly but does not set a clear age of consent for non-marital activity.",
+        "sources": [
+          {
+            "name": "ILGA World — State-Sponsored Homophobia Report (2023)",
+            "url": "https://ilga.org/state-sponsored-homophobia-report"
+          },
+          {
+            "name": "Indonesia Law No. 12/2022 on Sexual Violence Crimes (UU TPKS)",
+            "url": "https://www.dpr.go.id/berita/detail/id/35894"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Law No. 12 of 2022 on Sexual Violence Crimes (UU TPKS)",
+        "details": "After a multi-year advocacy campaign, Indonesia enacted the TPKS Law in 2022, which for the first time defines and criminalises multiple forms of sexual violence (including physical, psychological, and online). It is the most significant GBV legislation in Indonesia's history.",
+        "sources": [
+          {
+            "name": "UN Women — TPKS Law Analysis",
+            "url": "https://www.unwomen.org/en/news/stories/2022/5/feature-how-indonesian-womens-groups-fought-for-a-landmark-sexual-violence-law"
+          },
+          {
+            "name": "World Bank Women, Business and the Law 2024",
+            "url": "https://wbl.worldbank.org/en/reports"
+          }
+        ]
+      },
+      "caveats": "CSE implementation in Indonesia is highly decentralised; content and quality vary significantly between provinces. The TPKS Law (2022) is a major legal advance but implementation regulations are still being developed."
+    },
+    {
+      "iso": "PH",
+      "name": "Philippines",
+      "region": "South-Eastern Asia",
+      "coordinates": [14.5995, 120.9842],
+      "cse": {
+        "status": "yes",
+        "local_name": "Comprehensive Sexuality Education (CSE)",
+        "details": "CSE is explicitly mandated by DepEd Order No. 31, s.2018, following the RPRH Act (2012). The 2018 policy guidelines outline age-appropriate and culture-responsive CSE implementation. However, implementation is uneven across regions, with some local governments expressing resistance.",
+        "sources": [
+          {
+            "name": "DepEd Order No. 31, s.2018 — Policy Guidelines on CSE Implementation",
+            "url": "https://www.deped.gov.ph/2018/06/14/policy-guidelines-on-the-implementation-of-comprehensive-sexuality-education/"
+          },
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 16,
+        "details": "Republic Act 11648 (2022) raised the age of sexual consent from 12 to 16, a landmark reform after decades of advocacy. Close-in-age exemptions apply for consensual activity between minors aged 16–17.",
+        "sources": [
+          {
+            "name": "Republic Act 11648 (2022) — An Act Providing for Stronger Protection Against Rape",
+            "url": "https://legacy.senate.gov.ph/republic_acts/ra%2011648.pdf"
+          },
+          {
+            "name": "UNICEF Philippines — Age of Consent Reform",
+            "url": "https://www.unicef.org/philippines/press-releases/philippines-raises-age-sexual-consent-16-years"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Anti-VAWC Act (RA 9262, 2004); Safe Spaces Act (RA 11313, 2019); Magna Carta of Women (RA 9710, 2009)",
+        "details": "The Philippines has a multi-layered legal framework on GBV. The Safe Spaces Act (2019) is notable for criminalising street harassment and online sexual harassment. The Magna Carta of Women (2009) mandates gender-responsive budgeting across government agencies.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — Philippines",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/asia/philippines"
+          },
+          {
+            "name": "Philippines Safe Spaces Act (RA 11313, 2019)",
+            "url": "https://pcw.gov.ph/republic-act-11313-safe-spaces-act/"
+          }
+        ]
+      },
+      "caveats": "Despite strong legal frameworks, enforcement gaps persist, particularly in rural and conflict-affected areas. The Catholic Church continues to oppose some CSE content, creating tension between national policy and local implementation."
+    },
+    {
+      "iso": "CO",
+      "name": "Colombia",
+      "region": "South America",
+      "coordinates": [4.711, -74.0721],
+      "cse": {
+        "status": "yes",
+        "local_name": "Educación Sexual (Sexuality Education)",
+        "details": "Sexuality education has been compulsory since the General Education Law (Law 115/1994), reinforced by Constitutional Court rulings (e.g., T-478/2015) and the Montevideo Consensus on Population and Development (2013). The 2022 National Public Policy on Sexual and Reproductive Rights further strengthened the mandate.",
+        "sources": [
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          },
+          {
+            "name": "Colombia Law 115/1994 — General Education Law",
+            "url": "https://www.mineducacion.gov.co/1759/articles-85906_archivo_pdf.pdf"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 14,
+        "details": "The Penal Code (Article 208) sets the age of sexual consent at 14. Sexual activity with persons under 14 is criminalised regardless of consent. The Constitutional Court has upheld this threshold in multiple rulings.",
+        "sources": [
+          {
+            "name": "ILGA World — State-Sponsored Homophobia Report (2023)",
+            "url": "https://ilga.org/state-sponsored-homophobia-report"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Law 1257 of 2008 (Comprehensive Law for Women against VAW); Law 294 of 1996 (Domestic Violence)",
+        "details": "Colombia has comprehensive GBV legislation, including the landmark Law 1257/2008. The Constitutional Court has issued extensive jurisprudence on women's rights. However, implementation in conflict-affected and rural areas remains challenging, particularly given the ongoing presence of armed non-state actors.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — Colombia",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/americas/colombia"
+          },
+          {
+            "name": "Colombia Law 1257/2008",
+            "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=30967"
+          }
+        ]
+      },
+      "caveats": "While legal frameworks are progressive, enforcement is uneven due to the ongoing armed conflict, presence of armed groups, and weak state presence in peripheral territories."
+    },
+    {
+      "iso": "AR",
+      "name": "Argentina",
+      "region": "South America",
+      "coordinates": [-34.6037, -58.3816],
+      "cse": {
+        "status": "yes",
+        "local_name": "Educación Sexual Integral (ESI)",
+        "details": "Law 26.150/2006 made ESI mandatory at all educational levels in both state and private institutions. Argentina is widely regarded as a regional leader in CSE legislation. The law mandates that content must be secular, scientific, and gender-inclusive.",
+        "sources": [
+          {
+            "name": "Argentina Law 26.150/2006 — ESI Law",
+            "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26150-138679/texto"
+          },
+          {
+            "name": "UNESCO GEM Report, CSE Country Profiles (2023)",
+            "url": "https://unesdoc.unesco.org/ark:/48223/pf0000384494"
+          }
+        ]
+      },
+      "age_of_consent": {
+        "value": 13,
+        "details": "Article 119 of the Criminal Code sets the age at 13, but with an important caveat: sexual activity with persons aged 13–15 is lawful only where there is no 'abuse' or 'taking advantage' of the minor's situation (e.g., power imbalance). Below 13 is statutory rape regardless of circumstances.",
+        "sources": [
+          {
+            "name": "Argentina Criminal Code (Código Penal), Art. 119–125",
+            "url": "https://www.argentina.gob.ar/normativa/nacional/código-penal-317649/actualización"
+          },
+          {
+            "name": "ILGA World — State-Sponsored Homophobia Report (2023)",
+            "url": "https://ilga.org/state-sponsored-homophobia-report"
+          }
+        ]
+      },
+      "gbv_law": {
+        "status": "yes",
+        "law_name": "Law 26.485 of 2009 (Integral Protection Law for Women); Law 27.210 of 2015 (Expanded femicide definition)",
+        "details": "Argentina has comprehensive GBV legislation and was among the first Latin American countries to recognise femicide as a distinct crime (2012, expanded 2015). The 'Ni Una Menos' movement (2015) catalysed significant legal and policy advances.",
+        "sources": [
+          {
+            "name": "UN Women Global Database on VAW — Argentina",
+            "url": "https://evaw-global-database.unwomen.org/en/countries/americas/argentina"
+          },
+          {
+            "name": "Argentina Law 26.485/2009",
+            "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26485-141790/texto"
+          }
+        ]
+      },
+      "caveats": "Argentina's CSE law is among the most comprehensive globally, but teacher training gaps and resistance from some provincial education authorities create implementation variation."
+    }
+  ]
+}

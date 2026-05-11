@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE Policy &amp; Legal Environment — 8 Country Snapshot</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div>
+          <h1>CSE Policy &amp; Legal Environment</h1>
+          <p class="subtitle">8-country snapshot across Africa, Asia, and Latin America</p>
+        </div>
+        <div class="header-meta">
+          <span class="badge" id="data-date">Data: May 2026</span>
+          <a href="#methodology" class="btn-link">Methodology &amp; Sources</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Legend -->
+    <div class="legend-bar" aria-label="Status legend">
+      <div class="legend-group">
+        <span class="legend-label">CSE in curricula:</span>
+        <span class="legend-item"><span class="dot yes"></span>Yes</span>
+        <span class="legend-item"><span class="dot partial"></span>Partial</span>
+        <span class="legend-item"><span class="dot no"></span>No</span>
+      </div>
+    </div>
+
+    <!-- Main view: Map + Detail -->
+    <section class="main-view" aria-label="Interactive map and country details">
+      <div class="map-panel">
+        <div id="map"></div>
+        <p class="map-hint">Click a country marker to view details</p>
+      </div>
+
+      <div class="detail-panel" id="detail-panel">
+        <div class="detail-empty" id="detail-empty">
+          <p>Select a country on the map to view its policy profile.</p>
+        </div>
+        <div class="detail-content hidden" id="detail-content">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison table -->
+    <section class="table-section" aria-label="Country comparison table">
+      <h2>Comparison Table</h2>
+      <div class="table-wrap">
+        <table id="comparison-table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Region</th>
+              <th>CSE in Curricula</th>
+              <th>Local Name / Framing</th>
+              <th>Age of Consent</th>
+              <th>GBV Legal Framework</th>
+              <th>Caveats</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="methodology-section">
+      <h2>Methodology &amp; Limitations</h2>
+      <div class="methodology-grid">
+        <div>
+          <h3>Data Sources</h3>
+          <p>All data points are sourced from publicly available, authoritative sources. CSE curriculum integration status draws primarily on the <a href="https://unesdoc.unesco.org/ark:/48223/pf0000384494" target="_blank">UNESCO GEM Report CSE Country Profiles (2023)</a> and the <a href="https://education-profiles.org/themes/~comprehensive-sexuality-education" target="_blank">PEER Education Profiles</a> platform. Age of consent and GBV legislation are cross-referenced with the <a href="https://evaw-global-database.unwomen.org/" target="_blank">UN Women Global Database on Violence Against Women</a>, <a href="https://wbl.worldbank.org/en/reports" target="_blank">World Bank Women, Business and the Law</a>, and official national legislation. Where available, UNFPA country programme documents were consulted.</p>
+        </div>
+        <div>
+          <h3>Definitional Notes</h3>
+          <ul>
+            <li><strong>Yes</strong>: CSE is explicitly mandated and/or integrated into the national curriculum at relevant school levels, with clear policy guidance.</li>
+            <li><strong>Partial</strong>: Sexuality education exists but is not explicitly branded as CSE; or coverage is limited to specific subjects (e.g., HIV/AIDS, biology); or implementation is uneven.</li>
+            <li><strong>No</strong>: No national-level integration of sexuality education into school curricula.</li>
+            <li><strong>Age of consent</strong>: The age below which sexual activity is criminalised regardless of consent. This is a legal threshold and does not reflect cultural norms or enforcement realities.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Limitations</h3>
+          <ul>
+            <li><strong>Law vs. practice gap</strong>: The existence of a law or policy does not guarantee implementation. Countries like South Africa have comprehensive GBV laws but extremely high prevalence rates.</li>
+            <li><strong>Sub-national variation</strong>: Federal or highly decentralised systems (e.g., Nigeria, Indonesia, Argentina) may show significant variation between states or provinces that is not captured at the national level.</li>
+            <li><strong>Comparability</strong>: "Age of consent" and "CSE" are not defined identically across legal systems. Close-in-age exemptions, marital exemptions, and varying definitions of sexual violence affect comparability.</li>
+            <li><strong>Data currency</strong>: Legal landscapes change. This snapshot reflects information available as of May 2026. Recent legislative changes (e.g., Philippines raising age of consent in 2022, Indonesia TPKS Law 2022) are included where verified.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built for UNFPA Data Analytics &amp; Visualization Consultancy — Homework Assignment | May 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
