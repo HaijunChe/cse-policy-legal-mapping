@@ -6,7 +6,7 @@ Built as a homework assignment for the UNFPA Data Analytics and Visualization Co
 
 ## Live Dashboard
 
-**[View the dashboard →](https://haijunche.github.io/cse-policy-mapping/)**
+**[View the dashboard →](https://haijunche.github.io/CSE-Policy-Dashboard/)**
 
 ## Coverage
 
