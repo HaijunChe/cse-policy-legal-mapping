@@ -1,0 +1,146 @@
+[
+  {
+    "iso": "KE",
+    "name": "Kenya",
+    "region": "Eastern Africa",
+    "coords": [
+      -1.2921,
+      36.8219
+    ],
+    "cse_status": "partial",
+    "cse_name": "Life Skills Education (LSE)",
+    "cse_detail": "Sexuality education integrated into primary and secondary curriculum through LSE. Kenya adapted UNESCO's ITGSE to local context in 2016-2017.",
+    "consent": 18,
+    "consent_detail": "Penal Code sets age at 18. Child marriage remains significant in some counties.",
+    "gbv": "yes",
+    "gbv_law": "Sexual Offences Act (2006); Protection Against Domestic Violence Act (2015)",
+    "gbv_detail": "Comprehensive legal framework. GBV Task Force established 2024.",
+    "caveat": "Implementation faces resistance from faith-based groups, uneven across counties."
+  },
+  {
+    "iso": "ET",
+    "name": "Ethiopia",
+    "region": "Eastern Africa",
+    "coords": [
+      9.145,
+      40.4897
+    ],
+    "cse_status": "partial",
+    "cse_name": "HIV/AIDS and Reproductive Health Education",
+    "cse_detail": "Not explicitly branded as CSE. Delivered through HIV/AIDS and reproductive health channels. UNFPA Phase 1 pilot country (2020-2022).",
+    "consent": 18,
+    "consent_detail": "Criminal Code Article 626 sets minimum at 18. Child marriage prevalent in rural areas.",
+    "gbv": "yes",
+    "gbv_law": "Criminal Code Arts. 556-562; Family Code Reform (2000)",
+    "gbv_detail": "Criminal Code criminalizes sexual violence. Family Code raised marriage age to 18.",
+    "caveat": "Cultural and religious norms affect both CSE content and law enforcement, especially in rural areas."
+  },
+  {
+    "iso": "NG",
+    "name": "Nigeria",
+    "region": "Western Africa",
+    "coords": [
+      9.082,
+      7.6753
+    ],
+    "cse_status": "partial",
+    "cse_name": "Family Life and HIV Education (FLHE)",
+    "cse_detail": "FLHE approved by National Council on Education in 2001. Not branded as CSE. UNFPA Phase 2 country (2022-2024).",
+    "consent": "mixed",
+    "consent_detail": "Dual system: Criminal Code (south): 16; Penal Code (north): puberty; Child Rights Act: 18, state adoption uneven.",
+    "gbv": "partial",
+    "gbv_law": "Violence Against Persons (Prohibition) Act (VAPP Act, 2015)",
+    "gbv_detail": "Comprehensive at federal level. State adoption incomplete (~15+ states).",
+    "caveat": "Federal structure creates significant state-level variation in all three dimensions."
+  },
+  {
+    "iso": "ZA",
+    "name": "South Africa",
+    "region": "Southern Africa",
+    "coords": [
+      -33.9249,
+      18.4241
+    ],
+    "cse_status": "partial",
+    "cse_name": "Life Orientation (LO)",
+    "cse_detail": "Integrated into LO curriculum at all school levels. Implementation quality uneven. Teacher training and cultural resistance concerns.",
+    "consent": 16,
+    "consent_detail": "Criminal Law (Sexual Offences) Amendment Act 2007. Activity with persons under 16 criminalised.",
+    "gbv": "yes",
+    "gbv_law": "Domestic Violence Act (1998); Sexual Offences Amendment Act (2007)",
+    "gbv_detail": "Most comprehensive GBV framework on the continent. National Strategic Plan on GBV 2020-2030.",
+    "caveat": "Significant law vs. practice gap: comprehensive laws exist but GBV prevalence remains among world's highest."
+  },
+  {
+    "iso": "ID",
+    "name": "Indonesia",
+    "region": "South-Eastern Asia",
+    "coords": [
+      -6.2088,
+      106.8456
+    ],
+    "cse_status": "partial",
+    "cse_name": "Pendidikan Kesehatan Reproduksi (PKR)",
+    "cse_detail": "Not systematically integrated. Reproductive health education exists but limited to biology and abstinence. Strong religious opposition.",
+    "consent": 16,
+    "consent_detail": "Marriage age raised to 19 in 2019. Criminal Code lacks explicit standalone sexual consent age.",
+    "gbv": "yes",
+    "gbv_law": "Law No. 12/2022 on Sexual Violence Crimes (UU TPKS)",
+    "gbv_detail": "Landmark 2022 law defines and criminalises multiple forms of sexual violence for the first time.",
+    "caveat": "Highly decentralised: CSE content varies by province. TPKS Law implementation regulations still being developed."
+  },
+  {
+    "iso": "PH",
+    "name": "Philippines",
+    "region": "South-Eastern Asia",
+    "coords": [
+      14.5995,
+      120.9842
+    ],
+    "cse_status": "yes",
+    "cse_name": "Comprehensive Sexuality Education (CSE)",
+    "cse_detail": "Explicitly mandated by DepEd Order No. 31, s.2018 following RPRH Act (2012). Age-appropriate and culture-responsive guidelines.",
+    "consent": 16,
+    "consent_detail": "Republic Act 11648 (2022) raised age from 12 to 16. Close-in-age exemptions for 16-17.",
+    "gbv": "yes",
+    "gbv_law": "Anti-VAWC Act (RA 9262, 2004); Safe Spaces Act (RA 11313, 2019)",
+    "gbv_detail": "Multi-layered framework. Safe Spaces Act (2019) criminalises street and online harassment.",
+    "caveat": "Strong legal frameworks but enforcement gaps persist, especially in rural areas. Catholic Church opposes some CSE content."
+  },
+  {
+    "iso": "CO",
+    "name": "Colombia",
+    "region": "South America",
+    "coords": [
+      4.711,
+      -74.0721
+    ],
+    "cse_status": "yes",
+    "cse_name": "Educaci\u00f3n Sexual",
+    "cse_detail": "Compulsory since General Education Law (Law 115/1994). Reinforced by Constitutional Court rulings and Montevideo Consensus.",
+    "consent": 14,
+    "consent_detail": "Penal Code Article 208. Constitutional Court has upheld this threshold.",
+    "gbv": "yes",
+    "gbv_law": "Law 1257 of 2008 (Comprehensive Law for Women); Law 294 of 1996",
+    "gbv_detail": "Comprehensive legislation. Extensive Constitutional Court jurisprudence on women's rights.",
+    "caveat": "Implementation challenging in conflict-affected and rural areas due to armed groups and weak state presence."
+  },
+  {
+    "iso": "AR",
+    "name": "Argentina",
+    "region": "South America",
+    "coords": [
+      -34.6037,
+      -58.3816
+    ],
+    "cse_status": "yes",
+    "cse_name": "Educaci\u00f3n Sexual Integral (ESI)",
+    "cse_detail": "Law 26.150/2006 made ESI mandatory at all levels. Regional leader. Content must be secular, scientific, gender-inclusive.",
+    "consent": 13,
+    "consent_detail": "Article 119 Criminal Code. Activity with 13-15 lawful only without 'abuse'. Below 13 is statutory rape.",
+    "gbv": "yes",
+    "gbv_law": "Law 26.485/2009 (Integral Protection); Law 27.210/2015 (Expanded femicide)",
+    "gbv_detail": "Among first in Latin America to recognise femicide as distinct crime. 'Ni Una Menos' movement catalysed advances.",
+    "caveat": "Comprehensive CSE law but teacher training gaps and resistance from some provincial authorities create variation."
+  }
+]
