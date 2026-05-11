@@ -21,19 +21,24 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
   <style>
-    /* Base font size override for readability */
-    html { font-size: 17px; }
-    body { font-size: 1rem; line-height: 1.7; }
-    h1 { font-size: 2.6rem !important; }
-    h2 { font-size: 2rem !important; }
-    h3 { font-size: 1.2rem !important; }
-    p, li, td, th { font-size: 0.95rem; line-height: 1.7; }
-    .hero-subtitle { font-size: 1.15rem !important; line-height: 1.75 !important; }
-    .section-anchor p { font-size: 1rem !important; }
-    .country-card { font-size: 1rem; }
-    .navbar-link { font-size: 0.95rem !important; }
-    .stat-card .label { font-size: 0.95rem !important; }
-    .stat-card .value { font-size: 2.6rem !important; }
+    /* Base font size + pure black text */
+    html { font-size: 18px; }
+    body { font-size: 1.02rem; line-height: 1.75; color: #000; }
+    h1, h2, h3, h4 { color: #000 !important; }
+    h1 { font-size: 2.8rem !important; }
+    h2 { font-size: 2.1rem !important; }
+    h3 { font-size: 1.3rem !important; }
+    p, li, td, th { font-size: 1.02rem; line-height: 1.75; }
+    .hero-subtitle { font-size: 1.2rem !important; line-height: 1.75 !important; }
+    .section-anchor p { font-size: 1.05rem !important; max-width: 1100px !important; }
+    .country-card { font-size: 1.02rem; }
+    .navbar-link { font-size: 1rem !important; }
+    .stat-card .label { font-size: 1rem !important; color: #000 !important; }
+    .stat-card .value { font-size: 2.8rem !important; color: #000 !important; }
+    /* Stronger text contrast */
+    table td, table th { color: #000 !important; }
+    .insight-bullet-card h3, .method-bullet-card h3, .country-card h3 { color: #000 !important; }
+    .insight-bullet-card li, .method-bullet-card li { color: #1a1a1a !important; }
 
 
     /* ============ CSS VARIABLES ============ */
@@ -1834,10 +1839,10 @@
 
   <!-- Executive Summary -->
   <section class="section-anchor fade-up" style="padding-top:32px;padding-bottom:32px;">
-    <div style="background:linear-gradient(135deg,#F36F21 0%,#E05A0C 100%);border-radius:20px;padding:40px 44px;color:white;position:relative;overflow:hidden;">
+    <div style="background:linear-gradient(135deg,#009EDB 0%,#0072BC 100%);border-radius:20px;padding:44px 48px;color:white;position:relative;overflow:hidden;">
       <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,0.18),transparent 70%);"></div>
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;position:relative;">
-        <i data-lucide="zap" style="width:18px;height:18px;color:white;"></i>
+        <i data-lucide="zap" style="width:18px;height:18px;color:#FFD700;"></i>
         <span style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:white;opacity:0.9;">Executive Summary</span>
       </div>
       <h2 style="font-size:1.5rem;font-weight:700;line-height:1.4;margin-bottom:20px;position:relative;max-width:900px;">Across 8 countries, sexuality education exists everywhere — but only 3 explicitly call it CSE. The naming gap, not the existence gap, is the key challenge.</h2>
@@ -1895,7 +1900,7 @@
       <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Homework Requirement 1</span>
     </div>
     <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">CSE in Education Systems</h2>
-    <p style="font-size:0.95rem;color:#6B6B6B;max-width:700px;margin-bottom:32px;">Is CSE integrated into school curricula? Is it explicitly referred to as "CSE", or framed differently (life skills, health education, wellbeing)?</p>
+    <p style="font-size:0.95rem;color:#6B6B6B;max-width:1100px;margin-bottom:32px;">Is CSE integrated into school curricula? Is it explicitly referred to as "CSE", or framed differently (life skills, health education, wellbeing)?</p>
     <div class="country-grid" id="cseGrid"></div>
   </section>
 
@@ -1907,7 +1912,7 @@
         <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Homework Requirement 2</span>
       </div>
       <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Broader Enabling Environment</h2>
-      <p style="font-size:0.95rem;color:#6B6B6B;max-width:700px;margin-bottom:32px;">Three dimensions selected: <strong>Age of Consent Laws</strong>, <strong>GBV-Related Laws</strong>, and <strong>LGBTQ+ Legal Context</strong>. Together they shape the legal environment in which CSE programmes operate.</p>
+      <p style="font-size:0.95rem;color:#6B6B6B;max-width:1100px;margin-bottom:32px;">Three dimensions selected: <strong>Age of Consent Laws</strong>, <strong>GBV-Related Laws</strong>, and <strong>LGBTQ+ Legal Context</strong>. Together they shape the legal environment in which CSE programmes operate.</p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;">
         <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(45,41,38,0.05);">
@@ -1942,7 +1947,7 @@
       <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Interactive Dashboard</span>
     </div>
     <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Global Map & Country Profiles</h2>
-    <p style="font-size:0.95rem;color:#6B6B6B;max-width:700px;margin-bottom:24px;">Click any of the 8 focus countries on the map for the full CSE policy profile and data sources.</p>
+    <p style="font-size:0.95rem;color:#6B6B6B;max-width:1100px;margin-bottom:24px;">Click any of the 8 focus countries on the map for the full CSE policy profile and data sources.</p>
 
     <!-- Search & Filter -->
     <div style="display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;align-items:center;">
@@ -2033,84 +2038,102 @@
   <section id="insights" class="section-anchor fade-up">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
       <i data-lucide="lightbulb" style="width:22px;height:22px;color:#F36F21;"></i>
-      <span style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Analysis</span>
+      <span style="font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Analysis</span>
     </div>
-    <h2 style="font-size:2rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Key Insights &amp; Findings</h2>
-    <p style="font-size:1rem;color:#6B6B6B;max-width:720px;margin-bottom:32px;">Five cross-country patterns. <strong>Click any card</strong> for full analysis.</p>
+    <h2 style="font-size:2.1rem;font-weight:800;color:#000;margin-bottom:10px;">Key Insights &amp; Findings</h2>
+    <p style="font-size:1.05rem;color:#333;max-width:1100px;margin-bottom:32px;">Five cross-country patterns emerge from mapping all four dimensions. <strong>Click any card</strong> for full analysis.</p>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;">
-      <div class="insight-bullet-card" onclick="openInsightDetail('01')" style="background:white;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <span style="font-size:2rem;font-weight:800;color:#F36F21;line-height:1;">01</span>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('01')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="tag" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">01</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">The Naming Gap</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">The Naming Gap</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>0 / 8 score "No" on sexuality education</li>
           <li>Only 3 / 8 explicitly use the term "CSE"</li>
           <li>Challenge is framing, not existence</li>
         </ul>
       </div>
 
-      <div class="insight-bullet-card" onclick="openInsightDetail('02')" style="background:white;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #10b981;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <span style="font-size:2rem;font-weight:800;color:#10b981;line-height:1;">02</span>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('02')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="award" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">02</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">Latin America Leads</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Latin America Leads</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>Argentina ESI Law since 2006</li>
           <li>Colombia compulsory since 1994</li>
           <li>Both also protect LGBTQ+ rights</li>
         </ul>
       </div>
 
-      <div class="insight-bullet-card" onclick="openInsightDetail('03')" style="background:white;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #ef4444;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <span style="font-size:2rem;font-weight:800;color:#ef4444;line-height:1;">03</span>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('03')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="scale" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">03</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">Law &ne; Practice</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Law &ne; Practice</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>South Africa: strongest GBV framework</li>
           <li>Yet GBV prevalence among world&rsquo;s highest</li>
           <li>Strong laws necessary but not sufficient</li>
         </ul>
       </div>
 
-      <div class="insight-bullet-card" onclick="openInsightDetail('04')" style="background:white;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #f59e0b;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <span style="font-size:2rem;font-weight:800;color:#f59e0b;line-height:1;">04</span>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('04')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="puzzle" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">04</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">Federalism Fragments</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Federalism Fragments</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>Nigeria VAPP: only ~15 of 36 states</li>
           <li>Indonesia CSE varies by province</li>
           <li>National data masks fragmentation</li>
         </ul>
       </div>
 
-      <div class="insight-bullet-card" onclick="openInsightDetail('05')" style="background:white;border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #8b5cf6;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <span style="font-size:2rem;font-weight:800;color:#8b5cf6;line-height:1;">05</span>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('05')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="zap" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">05</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">2022: A Watershed Year</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">2022: A Watershed Year</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>Philippines: consent reform (12 &rarr; 16)</li>
           <li>Indonesia: TPKS Sexual Violence Law</li>
           <li>Momentum building, but unevenly</li>
         </ul>
       </div>
 
-      <div class="insight-bullet-card" onclick="openInsightDetail('06')" style="background:linear-gradient(135deg,#FFF4EC 0%,#FFE8D6 100%);border-radius:16px;padding:26px;box-shadow:0 4px 20px rgba(45,41,38,0.05);border-top:4px solid #2D2926;cursor:pointer;transition:all 0.25s ease;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-          <i data-lucide="target" style="width:24px;height:24px;color:#F36F21;"></i>
-          <i data-lucide="arrow-up-right" style="width:18px;height:18px;color:#9CA3AF;"></i>
+      <div class="insight-bullet-card" onclick="openInsightDetail('06')" style="background:linear-gradient(135deg,#FFF4EC 0%,#FFE8D6 100%);border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:4px solid #F36F21;cursor:pointer;transition:all 0.25s ease;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:48px;height:48px;background:white;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="target" style="width:24px;height:24px;color:#F36F21;"></i></div>
+            <span style="font-size:0.85rem;font-weight:700;color:#F36F21;text-transform:uppercase;letter-spacing:1px;">UNFPA</span>
+          </div>
+          <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
         </div>
-        <h3 style="font-size:1.1rem;font-weight:700;color:#2D2926;margin-bottom:12px;">Implication for UNFPA</h3>
-        <ul style="font-size:0.95rem;color:#4A4A4A;line-height:1.7;padding-left:18px;margin:0;">
+        <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Implication for UNFPA</h3>
+        <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:20px;margin:0;">
           <li>Distinguish existence vs quality interventions</li>
           <li>Map portfolio to country typology</li>
           <li>Address branding gap in partial contexts</li>
@@ -2125,7 +2148,7 @@
       <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Methodology</span>
     </div>
     <h2 style="font-size:1.8rem;font-weight:800;color:#2D2926;margin-bottom:8px;">Methodology &amp; Limitations</h2>
-    <p style="font-size:0.95rem;color:#6B6B6B;max-width:700px;margin-bottom:40px;">Scope, sources, scoring, and limitations.</p>
+    <p style="font-size:0.95rem;color:#6B6B6B;max-width:1100px;margin-bottom:40px;">Scope, sources, scoring, and limitations.</p>
 
     <!-- §1 Country Selection -->
     <div style="margin-bottom:36px;">
