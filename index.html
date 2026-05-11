@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSE Policy &amp; Legal Environment — 8 Country Snapshot</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-content">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-brand">
+        <div class="brand-icon"><i data-lucide="globe-2"></i></div>
         <div>
-          <h1>CSE Policy &amp; Legal Environment</h1>
-          <p class="subtitle">8-country snapshot across Africa, Asia, and Latin America</p>
+          <div class="brand-title">CSE Policy Mapping</div>
+          <div class="brand-subtitle">8-Country Snapshot</div>
         </div>
-        <div class="header-meta">
-          <span class="badge" id="data-date">Data: May 2026</span>
-          <a href="#methodology" class="btn-link">Methodology &amp; Sources</a>
+      </div>
+      <div class="navbar-meta">
+        <span class="date-badge"><i data-lucide="calendar"></i> May 2026</span>
+        <a href="#methodology" class="btn-link">Methodology</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <i data-lucide="shield-check"></i>
+        UNFPA Consultancy — Homework Assignment
+      </div>
+      <h1>CSE Policy &amp; Legal<br>Environment Mapping</h1>
+      <p class="hero-subtitle">Mapping the policy landscape for Comprehensive Sexuality Education across 8 countries in Africa, Asia, and Latin America — curriculum integration, age of consent, and GBV legal frameworks.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">8</span>
+          <span class="hero-stat-label">Countries</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">3</span>
+          <span class="hero-stat-label">Dimensions</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">4</span>
+          <span class="hero-stat-label">Regions</span>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <!-- Legend -->
-    <div class="legend-bar" aria-label="Status legend">
-      <div class="legend-group">
-        <span class="legend-label">CSE in curricula:</span>
-        <span class="legend-item"><span class="dot yes"></span>Yes</span>
-        <span class="legend-item"><span class="dot partial"></span>Partial</span>
-        <span class="legend-item"><span class="dot no"></span>No</span>
+  <!-- Main Dashboard -->
+  <main class="dashboard">
+    <!-- Summary Cards -->
+    <section class="summary-section">
+      <div class="summary-grid" id="summary-cards">
+        <!-- Populated by JS -->
       </div>
-    </div>
+    </section>
 
-    <!-- Main view: Map + Detail -->
-    <section class="main-view" aria-label="Interactive map and country details">
-      <div class="map-panel">
+    <!-- Map & Detail -->
+    <section class="map-detail-section">
+      <div class="map-card">
+        <div class="card-header">
+          <div class="card-header-title">
+            <i data-lucide="map-pin"></i>
+            <span>Interactive Map</span>
+          </div>
+          <div class="legend-inline">
+            <span class="legend-dot yes"></span><span>Yes</span>
+            <span class="legend-dot partial"></span><span>Partial</span>
+            <span class="legend-dot no"></span><span>No</span>
+          </div>
+        </div>
         <div id="map"></div>
-        <p class="map-hint">Click a country marker to view details</p>
+        <p class="map-hint">Click a country marker to view full details</p>
       </div>
 
-      <div class="detail-panel" id="detail-panel">
+      <div class="detail-card" id="detail-card">
         <div class="detail-empty" id="detail-empty">
-          <p>Select a country on the map to view its policy profile.</p>
+          <i data-lucide="mouse-pointer-click"></i>
+          <p>Select a country on the map<br>to view its policy profile.</p>
         </div>
         <div class="detail-content hidden" id="detail-content">
           <!-- Populated by JS -->
@@ -54,62 +93,74 @@
       </div>
     </section>
 
-    <!-- Comparison table -->
-    <section class="table-section" aria-label="Country comparison table">
-      <h2>Comparison Table</h2>
-      <div class="table-wrap">
-        <table id="comparison-table">
-          <thead>
-            <tr>
-              <th>Country</th>
-              <th>Region</th>
-              <th>CSE in Curricula</th>
-              <th>Local Name / Framing</th>
-              <th>Age of Consent</th>
-              <th>GBV Legal Framework</th>
-              <th>Caveats</th>
-            </tr>
-          </thead>
-          <tbody id="table-body">
-            <!-- Populated by JS -->
-          </tbody>
-        </table>
+    <!-- Comparison Table -->
+    <section class="table-section">
+      <div class="section-header">
+        <h2><i data-lucide="table-2"></i> Comparison Overview</h2>
+        <p class="section-desc">Side-by-side view of all 8 countries across the three mapped dimensions.</p>
+      </div>
+      <div class="table-card">
+        <div class="table-wrap">
+          <table id="comparison-table">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Region</th>
+                <th>CSE in Curricula</th>
+                <th>Local Framing</th>
+                <th>Age of Consent</th>
+                <th>GBV Framework</th>
+                <th>Key Caveat</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- Methodology -->
     <section id="methodology" class="methodology-section">
-      <h2>Methodology &amp; Limitations</h2>
+      <div class="section-header">
+        <h2><i data-lucide="book-open"></i> Methodology &amp; Limitations</h2>
+      </div>
       <div class="methodology-grid">
-        <div>
+        <div class="method-card">
+          <div class="method-icon"><i data-lucide="database"></i></div>
           <h3>Data Sources</h3>
-          <p>All data points are sourced from publicly available, authoritative sources. CSE curriculum integration status draws primarily on the <a href="https://unesdoc.unesco.org/ark:/48223/pf0000384494" target="_blank">UNESCO GEM Report CSE Country Profiles (2023)</a> and the <a href="https://education-profiles.org/themes/~comprehensive-sexuality-education" target="_blank">PEER Education Profiles</a> platform. Age of consent and GBV legislation are cross-referenced with the <a href="https://evaw-global-database.unwomen.org/" target="_blank">UN Women Global Database on Violence Against Women</a>, <a href="https://wbl.worldbank.org/en/reports" target="_blank">World Bank Women, Business and the Law</a>, and official national legislation. Where available, UNFPA country programme documents were consulted.</p>
+          <p>All data points are sourced from publicly available, authoritative sources: UNESCO GEM Report CSE Country Profiles (2023), PEER Education Profiles, UN Women Global Database on VAW, World Bank Women Business and the Law 2024, and official national legislation.</p>
         </div>
-        <div>
+        <div class="method-card">
+          <div class="method-icon"><i data-lucide="scale"></i></div>
           <h3>Definitional Notes</h3>
           <ul>
-            <li><strong>Yes</strong>: CSE is explicitly mandated and/or integrated into the national curriculum at relevant school levels, with clear policy guidance.</li>
-            <li><strong>Partial</strong>: Sexuality education exists but is not explicitly branded as CSE; or coverage is limited to specific subjects (e.g., HIV/AIDS, biology); or implementation is uneven.</li>
-            <li><strong>No</strong>: No national-level integration of sexuality education into school curricula.</li>
-            <li><strong>Age of consent</strong>: The age below which sexual activity is criminalised regardless of consent. This is a legal threshold and does not reflect cultural norms or enforcement realities.</li>
+            <li><strong>Yes</strong> — CSE explicitly mandated and integrated into national curriculum with clear policy guidance.</li>
+            <li><strong>Partial</strong> — Sexuality education exists but is not branded as CSE, or implementation is uneven.</li>
+            <li><strong>No</strong> — No national-level integration of sexuality education into school curricula.</li>
+            <li><strong>Age of consent</strong> — Legal threshold; does not reflect cultural norms or enforcement realities.</li>
           </ul>
         </div>
-        <div>
+        <div class="method-card">
+          <div class="method-icon"><i data-lucide="alert-triangle"></i></div>
           <h3>Limitations</h3>
           <ul>
-            <li><strong>Law vs. practice gap</strong>: The existence of a law or policy does not guarantee implementation. Countries like South Africa have comprehensive GBV laws but extremely high prevalence rates.</li>
-            <li><strong>Sub-national variation</strong>: Federal or highly decentralised systems (e.g., Nigeria, Indonesia, Argentina) may show significant variation between states or provinces that is not captured at the national level.</li>
-            <li><strong>Comparability</strong>: "Age of consent" and "CSE" are not defined identically across legal systems. Close-in-age exemptions, marital exemptions, and varying definitions of sexual violence affect comparability.</li>
-            <li><strong>Data currency</strong>: Legal landscapes change. This snapshot reflects information available as of May 2026. Recent legislative changes (e.g., Philippines raising age of consent in 2022, Indonesia TPKS Law 2022) are included where verified.</li>
+            <li><strong>Law vs. practice gap</strong> — Legal existence does not guarantee implementation.</li>
+            <li><strong>Sub-national variation</strong> — Federal/decentralised systems show significant intra-country differences.</li>
+            <li><strong>Comparability</strong> — Definitions vary across legal systems (marital exemptions, close-in-age provisions).</li>
+            <li><strong>Static snapshot</strong> — Reflects state as of May 2026.</li>
           </ul>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <p>Built for UNFPA Data Analytics &amp; Visualization Consultancy — Homework Assignment | May 2026</p>
+    <div class="footer-inner">
+      <p>Built for UNFPA Data Analytics &amp; Visualization Consultancy — Homework Assignment</p>
+      <p class="footer-meta">Haijun Che &middot; May 2026</p>
     </div>
   </footer>
 
