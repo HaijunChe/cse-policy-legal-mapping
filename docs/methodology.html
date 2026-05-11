@@ -3,142 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE Policy Mapping — Methodology Brief</title>
+  <title>CSE Policy &amp; Legal Environment — Methodology Brief</title>
   <style>
-    @page { margin: 2cm; }
+    @page { margin: 1.8cm; size: A4; }
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Georgia', 'Times New Roman', serif;
       color: #1a1a1a;
-      line-height: 1.6;
+      line-height: 1.55;
       max-width: 21cm;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1.5cm;
+      font-size: 10.5pt;
     }
     h1 {
-      font-size: 1.4rem;
-      margin-bottom: 0.3rem;
-      border-bottom: 2px solid #00AED9;
-      padding-bottom: 0.5rem;
+      font-size: 17pt;
+      margin-bottom: 0.2rem;
+      border-bottom: 2.5px solid #F36F21;
+      padding-bottom: 0.4rem;
+      color: #000;
+      letter-spacing: -0.3px;
     }
     .meta {
-      font-size: 0.85rem;
+      font-size: 9pt;
       color: #555;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
     }
     h2 {
-      font-size: 1.05rem;
-      margin-top: 1.2rem;
+      font-size: 11.5pt;
+      margin-top: 0.9rem;
       margin-bottom: 0.4rem;
-      color: #1a1a1a;
+      color: #000;
+      font-weight: 700;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+    }
+    h3 {
+      font-size: 10pt;
+      font-weight: 700;
+      margin-top: 0.5rem;
+      margin-bottom: 0.2rem;
+      color: #2D2926;
     }
     p, li {
-      font-size: 0.9rem;
+      font-size: 9.5pt;
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+    ul, ol {
+      padding-left: 1.1rem;
       margin-bottom: 0.5rem;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
+    li { margin-bottom: 0.18rem; }
     .highlight-box {
-      background: #f8f9fa;
-      border-left: 3px solid #00AED9;
-      padding: 0.75rem 1rem;
-      margin: 1rem 0;
-      font-size: 0.88rem;
+      background: #FFF4EC;
+      border-left: 3px solid #F36F21;
+      padding: 0.55rem 0.9rem;
+      margin: 0.6rem 0;
+      font-size: 9pt;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.8rem;
-      margin: 0.75rem 0;
+      font-size: 8.5pt;
+      margin: 0.55rem 0;
     }
     th, td {
       border: 1px solid #ddd;
-      padding: 0.4rem 0.5rem;
+      padding: 0.32rem 0.45rem;
       text-align: left;
+      vertical-align: top;
     }
     th {
       background: #f1f3f5;
-      font-weight: 600;
+      font-weight: 700;
     }
     .source {
-      font-size: 0.8rem;
-      color: #555;
-      margin-top: 1.5rem;
-      padding-top: 0.5rem;
+      font-size: 8.5pt;
+      color: #444;
+      margin-top: 1.2rem;
+      padding-top: 0.4rem;
       border-top: 1px solid #ddd;
     }
+    .source a { color: #0066B3; text-decoration: none; }
+    .keyword { display: inline-block; background: #FFF4EC; color: #F36F21; padding: 1px 6px; border-radius: 3px; font-size: 8.5pt; font-weight: 700; margin-right: 4px; }
+    .case { background: #FAFAFA; border-left: 2px solid #999; padding: 4px 10px; margin: 4px 0; font-size: 9pt; font-style: italic; color: #444; }
     @media print {
-      body { padding: 0; }
+      body { padding: 0; max-width: none; }
+      h1, h2, h3 { page-break-after: avoid; }
       .no-print { display: none; }
+      ul, ol, table { page-break-inside: avoid; }
     }
   </style>
 </head>
 <body>
   <h1>CSE Policy &amp; Legal Environment — Methodology Brief</h1>
   <div class="meta">
-    UNFPA Data Analytics &amp; Visualization Consultancy — Homework Assignment<br>
-    Prepared by: Haijun Che | Date: 11 May 2026
+    <strong>Project:</strong> UNFPA Data Analytics &amp; Visualization Consultancy — Homework Assignment<br>
+    <strong>Author:</strong> Haijun Che &nbsp;|&nbsp; <strong>Date:</strong> 11 May 2026 &nbsp;|&nbsp; <strong>Dashboard:</strong> <a href="https://haijunche.github.io/cse-policy-legal-mapping/">haijunche.github.io/cse-policy-legal-mapping</a>
   </div>
 
-  <h2>1. Objective</h2>
-  <p>This assignment maps the policy and legal environment for Comprehensive Sexuality Education (CSE) across 8 countries spanning Africa, Asia, and Latin America. The goal is to produce a clear, navigable visual product that surfaces patterns and gaps across three dimensions: (1) CSE integration in school curricula, (2) age of consent laws, and (3) the existence of GBV-related legislation.</p>
+  <h2>§1 Objective &amp; Scope</h2>
+  <p>This assignment maps the <strong>policy and legal environment for Comprehensive Sexuality Education (CSE)</strong> across <strong>8 countries</strong> spanning Africa, Asia, and Latin America. The output is an interactive, publicly accessible dashboard that surfaces patterns and gaps across <strong>four dimensions</strong>: (1) CSE integration in school curricula, (2) age of consent laws, (3) GBV-related legal frameworks, and (4) LGBTQ+ legal context.</p>
+  <p>The dashboard goes beyond the homework requirement of two enabling-environment dimensions by adding a third (LGBTQ+) to provide a fuller view of the rights-based context in which CSE programmes operate.</p>
 
-  <h2>2. Country Selection Rationale</h2>
-  <p>Eight countries were selected to balance three criteria: <strong>regional representativeness</strong> (4 UN sub-regions, 3 continents), <strong>policy spectrum diversity</strong> (progressive to restrictive), and <strong>data availability</strong> (presence in UNESCO GEM Report CSE profiles or UNFPA programme documents).</p>
-
+  <h2>§2 Country Selection (n = 8)</h2>
+  <p>Eight countries selected to maximise variance across three criteria: <span class="keyword">regional coverage</span> 4 UN sub-regions, 3 continents · <span class="keyword">policy spectrum</span> progressive → restrictive · <span class="keyword">UNFPA portfolio alignment</span> Ethiopia (Phase I pilot) &amp; Nigeria (Phase II) are out-of-school CSE focus countries.</p>
   <table>
-    <thead>
-      <tr><th>Country</th><th>Region</th><th>CSE Status</th><th>Rationale</th></tr>
-    </thead>
+    <thead><tr><th>Country</th><th>Region</th><th>CSE</th><th>Selection Rationale</th></tr></thead>
     <tbody>
-      <tr><td>Kenya</td><td>E. Africa</td><td>Partial</td><td>UNFPA CSE focus; Life Skills model; regional benchmark</td></tr>
-      <tr><td>Ethiopia</td><td>E. Africa</td><td>Partial</td><td>HIV-education framing; cultural conservatism; Phase 1 pilot</td></tr>
-      <tr><td>Nigeria</td><td>W. Africa</td><td>Partial</td><td>FLHE curriculum; federal complexity; out-of-school CSE focus</td></tr>
-      <tr><td>S. Africa</td><td>S. Africa</td><td>Partial</td><td>Life Orientation; comprehensive laws vs. high GBV prevalence</td></tr>
-      <tr><td>Indonesia</td><td>SE Asia</td><td>Partial</td><td>Religious opposition; TPKS Law 2022; decentralised</td></tr>
-      <tr><td>Philippines</td><td>SE Asia</td><td>Yes</td><td>DepEd Order 2018; consent reform 2022; strong laws, weak enforcement</td></tr>
-      <tr><td>Colombia</td><td>S. America</td><td>Yes</td><td>Constitutional mandate since 1994; conflict-affected enforcement gaps</td></tr>
-      <tr><td>Argentina</td><td>S. America</td><td>Yes</td><td>ESI Law 2006; regional leader; implementation still uneven</td></tr>
+      <tr><td><strong>Kenya</strong></td><td>E. Africa</td><td>Partial</td><td>Life Skills Education; UNESCO ITGSE adaptation; regional CSE benchmark</td></tr>
+      <tr><td><strong>Ethiopia</strong></td><td>E. Africa</td><td>Partial</td><td>HIV/AIDS framing; UNFPA Phase I pilot; conservative context</td></tr>
+      <tr><td><strong>Nigeria</strong></td><td>W. Africa</td><td>Partial</td><td>FLHE curriculum; federal complexity; UNFPA Phase II</td></tr>
+      <tr><td><strong>South Africa</strong></td><td>S. Africa</td><td>Partial</td><td>Life Orientation; strong GBV laws vs. high prevalence — law/practice gap</td></tr>
+      <tr><td><strong>Indonesia</strong></td><td>SE Asia</td><td>Partial</td><td>Religious opposition; TPKS Law 2022; decentralised education</td></tr>
+      <tr><td><strong>Philippines</strong></td><td>SE Asia</td><td>Yes</td><td>DepEd Order 31/2018; 2022 consent reform; strong frameworks</td></tr>
+      <tr><td><strong>Colombia</strong></td><td>S. America</td><td>Yes</td><td>Compulsory since 1994; Constitutional Court jurisprudence</td></tr>
+      <tr><td><strong>Argentina</strong></td><td>S. America</td><td>Yes</td><td>ESI Law 2006 — regional leader; comprehensive rights framework</td></tr>
     </tbody>
   </table>
 
-  <h2>3. Data Sources &amp; Methods</h2>
-  <ul>
-    <li><strong>CSE curriculum status:</strong> UNESCO GEM Report CSE Country Profiles (2023) and PEER Education Profiles platform — the most comprehensive publicly available source on CSE policy globally.</li>
-    <li><strong>Age of consent:</strong> Cross-referenced national penal/criminal codes with ILGA World reports and ECPAT country profiles. Where federal systems create legal pluralism (e.g., Nigeria), this is noted explicitly rather than collapsed into a single number.</li>
-    <li><strong>GBV legislation:</strong> UN Women Global Database on Violence Against Women and World Bank Women, Business and the Law 2024 dataset, supplemented with official national gazettes.</li>
-  </ul>
+  <h2>§3 Dimensions &amp; Scoring</h2>
+  <ol>
+    <li><strong>CSE in Education Systems</strong> — Yes / Partial / No, plus local naming (LSE, FLHE, LO, PKR, ESI, etc.).</li>
+    <li><strong>Age of Consent Laws</strong> — Numerical threshold, with notes on federal/dual systems (e.g., Nigeria).</li>
+    <li><strong>GBV-Related Laws</strong> — Yes / Partial / No, with primary legislation cited.</li>
+    <li><strong>LGBTQ+ Legal Context</strong> — Protected / Tolerated / Criminalized, with key legal instruments.</li>
+  </ol>
+  <p><strong>Scoring criteria.</strong> <span class="keyword">Yes</span> Explicit national mandate with policy guidance. <span class="keyword">Partial</span> Exists but not branded as CSE, or implementation uneven. <span class="keyword">No</span> No national-level integration.</p>
+
+  <h2>§4 Data Sources</h2>
+  <ol>
+    <li><strong>UNESCO GEM Report</strong> (2023). <em>CSE Country Profiles.</em> Primary source for curriculum integration status and local naming.</li>
+    <li><strong>PEER Education Profiles.</strong> Cross-verification of CSE policy details.</li>
+    <li><strong>UN Women Global Database on Violence Against Women</strong> (2024).</li>
+    <li><strong>World Bank</strong> (2024). <em>Women, Business and the Law.</em> Age of consent and GBV cross-check.</li>
+    <li><strong>ILGA World</strong> (2023). <em>State-Sponsored Homophobia Report.</em> LGBTQ+ legal context.</li>
+    <li><strong>UNFPA Programme Documents.</strong> CSE programme phase information.</li>
+    <li>National legislation and government gazettes (cited per country in the dashboard).</li>
+  </ol>
+
+  <h2>§5 Key Insights</h2>
+  <ol>
+    <li><strong>The Naming Gap.</strong> 0 / 8 score "No" on sexuality education — even restrictive contexts (Indonesia, Ethiopia) have curricula. Only 3 / 8 explicitly use the term "CSE". The challenge is framing, not existence.</li>
+    <li><strong>Latin America Leads.</strong> Argentina (ESI 2006) and Colombia (since 1994) have the longest CSE mandates. Both also protect LGBTQ+ rights — CSE thrives where broader rights are protected.</li>
+    <li><strong>Law ≠ Practice.</strong> South Africa has the strongest GBV legal framework on the continent — yet GBV prevalence is among the world's highest. Strong laws are necessary but not sufficient.</li>
+    <li><strong>Federalism Fragments.</strong> Nigeria's VAPP Act is adopted by ~15 of 36 states; Indonesia's CSE varies by province. National data masks sub-national fragmentation.</li>
+    <li><strong>2022 Watershed Year.</strong> Philippines raised consent (12→16); Indonesia enacted TPKS Sexual Violence Law. Both followed decades of advocacy.</li>
+  </ol>
 
   <div class="highlight-box">
-    <strong>Transparency note:</strong> Every data point in the dashboard links to its primary source. Where the same country appears in multiple datasets with conflicting characterisations, the most recent authoritative source was prioritised and discrepancies are noted in the caveats field.
+    <strong>Implication for UNFPA.</strong> Programming should distinguish: (i) <em>existence interventions</em> for low-CSE contexts; (ii) <em>quality/branding interventions</em> for partial contexts (transition embedded curricula to explicit CSE framework); (iii) <em>implementation monitoring</em> for high-CSE contexts where law-practice gaps persist. The Out-of-School CSE programme is well-positioned to address gaps formal systems cannot reach.
   </div>
 
-  <h2>4. Key Insights</h2>
-  <ul>
-    <li><strong>No country in this sample scores "No" on CSE.</strong> Even in restrictive environments (Indonesia, Ethiopia), some form of sexuality education exists — typically embedded in HIV/AIDS or health education rather than branded as CSE. This suggests that the framing debate ("CSE" vs. "life skills") is as significant as the presence/absence debate.</li>
-    <li><strong>"Law on the books" does not equal "law in practice."</strong> South Africa has comprehensive GBV legislation but one of the world's highest femicide rates. Argentina's ESI Law is regionally progressive but teacher training gaps persist. The dashboard flags this explicitly through caveats.</li>
-    <li><strong>Federal and decentralised systems create significant sub-national variation.</strong> Nigeria's VAPP Act is adopted by only ~15 states; Indonesia's CSE content varies by province; Argentina's ESI implementation quality differs by jurisdiction. National-level snapshots necessarily obscure this granularity.</li>
-  </ul>
+  <h2>§6 Limitations</h2>
+  <ol>
+    <li><strong>Law ≠ practice gap.</strong> <span class="case">South Africa has comprehensive GBV laws but among the world's highest GBV prevalence.</span></li>
+    <li><strong>Sub-national variation.</strong> <span class="case">Nigeria's VAPP Act adopted by only ~15 of 36 states; some northern states use Sharia-based alternatives.</span></li>
+    <li><strong>Definitional comparability.</strong> <span class="case">Argentina's age of consent is 13 but with a critical "no abuse" condition for 13–15. The raw number misses nuance.</span></li>
+    <li><strong>Static snapshot.</strong> <span class="case">Reflects May 2026. Philippines 2022 reform and Indonesia 2022 TPKS Law are recent examples of fast change.</span></li>
+    <li><strong>Self-reported data.</strong> CSE profiles partly depend on government reporting to UNESCO; classroom-level reality may differ. Cross-verification with civil society recommended.</li>
+  </ol>
 
-  <h2>5. Limitations</h2>
-  <ul>
-    <li><strong>Comparability:</strong> "Age of consent" is defined differently across legal systems (some include marital exemptions, some do not; some use close-in-age provisions). A single number does not capture this complexity.</li>
-    <li><strong>Sub-national variation:</strong> This exercise reports at the national level. For federal or highly decentralised systems, significant intra-country differences exist but are not visualised here.</li>
-    <li><strong>Static snapshot:</strong> Legal landscapes change. The Philippines raised its age of consent from 12 to 16 in 2022; Indonesia enacted the TPKS Law in 2022. This dashboard reflects the state as of May 2026.</li>
-    <li><strong>Self-reported data:</strong> Some CSE profiles rely on government self-reporting to UNESCO, which may not reflect classroom reality.</li>
-  </ul>
-
-  <h2>6. Tools Used</h2>
-  <p><strong>Data:</strong> Manual compilation from UNESCO, UN Women, World Bank, and national legislative databases. No proprietary datasets were used.</p>
-  <p><strong>Dashboard:</strong> HTML5, CSS3, Vanilla JavaScript, Leaflet.js (mapping), OpenStreetMap tiles. No build tools or frameworks — designed for zero-dependency, fast load times, and easy maintainability.</p>
+  <h2>§7 Tools Used</h2>
+  <p><strong>Data:</strong> Manual compilation from public sources (no proprietary datasets). <strong>Stack:</strong> HTML5, CSS3, Vanilla JavaScript, Plotly.js (choropleth, donut, bar charts), Leaflet.js (mini country maps), OpenStreetMap (tiles), Lucide icons. <strong>Hosting:</strong> GitHub Pages (static). <strong>Design principle:</strong> zero build step, no framework — fast load, easy maintenance, full transparency of source.</p>
 
   <div class="source">
-    <strong>Dashboard URL:</strong> https://haijunche.github.io/cse-policy-legal-mapping/<br>
-    <strong>Repository:</strong> https://github.com/haijunche/CSE-Policy-Dashboard
+    <strong>Dashboard URL:</strong> <a href="https://haijunche.github.io/cse-policy-legal-mapping/">https://haijunche.github.io/cse-policy-legal-mapping/</a><br>
+    <strong>Repository:</strong> <a href="https://github.com/haijunche/cse-policy-legal-mapping">https://github.com/haijunche/cse-policy-legal-mapping</a><br>
+    <strong>Author:</strong> Haijun Che &middot; Erasmus Mundus M.Sc. Public Health in Disasters, Karolinska Institutet
   </div>
 
-  <div class="no-print" style="margin-top:2rem;text-align:center;">
-    <button onclick="window.print()" style="padding:0.5rem 1.5rem;font-size:1rem;cursor:pointer;">Print to PDF</button>
+  <div class="no-print" style="margin-top:1.5rem;text-align:center;">
+    <button onclick="window.print()" style="padding:0.6rem 1.6rem;font-size:1rem;cursor:pointer;background:#F36F21;color:white;border:none;border-radius:6px;font-weight:600;">Print to PDF</button>
   </div>
 </body>
 </html>
