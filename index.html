@@ -1780,11 +1780,12 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="#" class="navbar-brand">
-        <div style="width:40px;height:40px;background:linear-gradient(135deg,#F36F21 0%,#E05A0C 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;box-shadow:0 2px 8px rgba(243,111,33,0.25);">
-          <i data-lucide="globe-2" style="width:22px;height:22px;"></i>
-        </div>
-        <span class="navbar-brand-text">CSE Policy Mapping<br><span style="color:#9CA3AF;">8-Country Snapshot</span></span>
+      <a href="https://www.unfpa.org" target="_blank" rel="noopener" class="navbar-brand" style="text-decoration:none;">
+        <img src="https://www.unfpa.org/themes/custom/unfpa_global_redesign/logo.svg" alt="UNFPA" style="height:42px;width:auto;">
+        <span class="navbar-brand-text" style="border-left:1.5px solid #E5E7EB;padding-left:14px;margin-left:4px;line-height:1.3;">
+          <strong style="font-size:0.95rem;color:#2D2926;display:block;">CSE Policy Mapping</strong>
+          <span style="font-size:0.78rem;color:#9CA3AF;">8-Country Snapshot &middot; 2026</span>
+        </span>
       </a>
       <div class="navbar-links">
         <a href="#dashboard" class="navbar-link">Dashboard</a>
@@ -2985,6 +2986,10 @@
             <h2 style="font-size:1.5rem;font-weight:800;color:#2D2926;line-height:1.2;">${c.name}</h2>
             <div style="font-size:0.85rem;color:#9CA3AF;font-weight:500;">${c.region}</div>
           </div>
+        </div>
+        <div style="background:#F8F9FA;border-radius:12px;padding:8px;margin-bottom:20px;position:relative;">
+          <div id="miniCountryMap" style="height:220px;width:100%;border-radius:8px;overflow:hidden;background:#E5E7EB;"></div>
+          <div style="position:absolute;top:18px;left:18px;background:rgba(255,255,255,0.95);padding:5px 12px;border-radius:6px;font-size:0.72rem;color:#4A4A4A;font-weight:600;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.1);">📍 Country Location</div>
         </div>
         <div style="background:#FAFAFA;border-radius:12px;padding:20px;margin-bottom:16px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
