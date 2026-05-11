@@ -1760,6 +1760,11 @@
       transform: translateY(-4px);
       box-shadow: 0 20px 40px -5px rgba(45,41,38,0.12) !important;
     }
+  
+    .limitation-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -5px rgba(45,41,38,0.12) !important;
+    }
   </style>
 </head>
 <body>
@@ -2586,85 +2591,101 @@
         <span style="font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F36F21;">Honest Notes</span>
       </div>
       <h2 style="font-size:2.1rem;font-weight:800;color:#000;margin-bottom:10px;">Limitations &amp; Important Caveats</h2>
-      <p style="font-size:1.05rem;color:#333;margin-bottom:36px;">Four important limitations to keep in mind when interpreting this dashboard. Each is illustrated with a real example from the data.</p>
+      <p style="font-size:1.05rem;color:#333;margin-bottom:36px;">Four important limitations to keep in mind. <strong>Click any card</strong> for the full case study.</p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:22px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;">
 
-        <!-- Limitation 1: Law vs Practice -->
-        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:5px solid #ef4444;transition:all 0.25s ease;">
-          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
-            <div style="width:52px;height:52px;background:#FEF2F2;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i data-lucide="alert-octagon" style="width:26px;height:26px;color:#ef4444;"></i></div>
-            <div>
-              <div style="font-size:0.8rem;color:#ef4444;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Limitation 01</div>
-              <h3 style="font-size:1.2rem;font-weight:700;color:#000;">Law &ne; Practice</h3>
+        <!-- Limitation 01 -->
+        <div class="limitation-card" onclick="openLimitDetail('01')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.25s ease;border-top:4px solid #F36F21;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div style="width:52px;height:52px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="alert-octagon" style="width:26px;height:26px;color:#F36F21;"></i></div>
+              <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">01</span>
             </div>
+            <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
           </div>
-          <p style="font-size:1rem;color:#1a1a1a;line-height:1.7;margin-bottom:14px;">Legal existence does not guarantee real-world protection. Strong laws are necessary but not sufficient.</p>
-          <div style="background:#FEF2F2;border-radius:10px;padding:14px 18px;border-left:3px solid #ef4444;">
-            <div style="font-size:0.78rem;color:#ef4444;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:6px;">Real Example</div>
-            <p style="font-size:0.95rem;color:#000;line-height:1.6;margin:0;">🇿🇦 <strong>South Africa</strong> has the most comprehensive GBV legal framework on the continent (Domestic Violence Act 1998, Sexual Offences Act 2007) &mdash; yet GBV prevalence remains among the world&rsquo;s highest. <em>Comprehensive law &ne; effective protection.</em></p>
-          </div>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Law &ne; Practice</h3>
+          <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:22px;margin:0 0 16px 0;">
+            <li>Legal existence does not guarantee protection</li>
+            <li>Comprehensive laws need enforcement</li>
+            <li>Case: South Africa GBV</li>
+          </ul>
+          <div style="display:inline-flex;align-items:center;gap:6px;color:#F36F21;font-size:0.88rem;font-weight:700;">Click for details <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
         </div>
 
-        <!-- Limitation 2: Sub-national Variation -->
-        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:5px solid #f59e0b;transition:all 0.25s ease;">
-          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
-            <div style="width:52px;height:52px;background:#FFFBEB;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i data-lucide="layers" style="width:26px;height:26px;color:#f59e0b;"></i></div>
-            <div>
-              <div style="font-size:0.8rem;color:#f59e0b;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Limitation 02</div>
-              <h3 style="font-size:1.2rem;font-weight:700;color:#000;">Sub-national Variation</h3>
+        <!-- Limitation 02 -->
+        <div class="limitation-card" onclick="openLimitDetail('02')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.25s ease;border-top:4px solid #F36F21;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div style="width:52px;height:52px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="layers" style="width:26px;height:26px;color:#F36F21;"></i></div>
+              <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">02</span>
             </div>
+            <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
           </div>
-          <p style="font-size:1rem;color:#1a1a1a;line-height:1.7;margin-bottom:14px;">Federal or decentralised systems show significant intra-country differences not captured at the national level.</p>
-          <div style="background:#FFFBEB;border-radius:10px;padding:14px 18px;border-left:3px solid #f59e0b;">
-            <div style="font-size:0.78rem;color:#f59e0b;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:6px;">Real Example</div>
-            <p style="font-size:0.95rem;color:#000;line-height:1.6;margin:0;">🇳🇬 <strong>Nigeria&rsquo;s</strong> VAPP Act (2015) is comprehensive at the federal level, but only ~15 of 36 states have domesticated it. Some northern states rely on Sharia-based alternatives that do not provide equivalent protections.</p>
-          </div>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Sub-national Variation</h3>
+          <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:22px;margin:0 0 16px 0;">
+            <li>Federal systems hide intra-country differences</li>
+            <li>National data masks fragmentation</li>
+            <li>Case: Nigeria VAPP adoption</li>
+          </ul>
+          <div style="display:inline-flex;align-items:center;gap:6px;color:#F36F21;font-size:0.88rem;font-weight:700;">Click for details <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
         </div>
 
-        <!-- Limitation 3: Definitional Comparability -->
-        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:5px solid #8b5cf6;transition:all 0.25s ease;">
-          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
-            <div style="width:52px;height:52px;background:#F5F3FF;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i data-lucide="git-compare" style="width:26px;height:26px;color:#8b5cf6;"></i></div>
-            <div>
-              <div style="font-size:0.8rem;color:#8b5cf6;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Limitation 03</div>
-              <h3 style="font-size:1.2rem;font-weight:700;color:#000;">Definitional Comparability</h3>
+        <!-- Limitation 03 -->
+        <div class="limitation-card" onclick="openLimitDetail('03')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.25s ease;border-top:4px solid #F36F21;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div style="width:52px;height:52px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="git-compare" style="width:26px;height:26px;color:#F36F21;"></i></div>
+              <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">03</span>
             </div>
+            <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
           </div>
-          <p style="font-size:1rem;color:#1a1a1a;line-height:1.7;margin-bottom:14px;">&ldquo;Age of consent&rdquo; and &ldquo;CSE&rdquo; are not defined identically across legal systems. The raw number does not capture nuance.</p>
-          <div style="background:#F5F3FF;border-radius:10px;padding:14px 18px;border-left:3px solid #8b5cf6;">
-            <div style="font-size:0.78rem;color:#8b5cf6;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:6px;">Real Example</div>
-            <p style="font-size:0.95rem;color:#000;line-height:1.6;margin:0;">🇦🇷 <strong>Argentina&rsquo;s</strong> age of consent is 13 &mdash; but the Criminal Code adds a critical condition: sexual activity with persons 13&ndash;15 is lawful <em>only</em> where there is no &ldquo;abuse&rdquo; or &ldquo;taking advantage&rdquo; of the minor.</p>
-          </div>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Definitional Comparability</h3>
+          <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:22px;margin:0 0 16px 0;">
+            <li>Terms vary across legal systems</li>
+            <li>Raw numbers miss nuance</li>
+            <li>Case: Argentina age of consent</li>
+          </ul>
+          <div style="display:inline-flex;align-items:center;gap:6px;color:#F36F21;font-size:0.88rem;font-weight:700;">Click for details <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
         </div>
 
-        <!-- Limitation 4: Static Snapshot -->
-        <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-top:5px solid #0066B3;transition:all 0.25s ease;">
-          <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
-            <div style="width:52px;height:52px;background:#F0F7FF;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i data-lucide="clock" style="width:26px;height:26px;color:#0066B3;"></i></div>
-            <div>
-              <div style="font-size:0.8rem;color:#0066B3;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Limitation 04</div>
-              <h3 style="font-size:1.2rem;font-weight:700;color:#000;">Static Snapshot</h3>
+        <!-- Limitation 04 -->
+        <div class="limitation-card" onclick="openLimitDetail('04')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.25s ease;border-top:4px solid #F36F21;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div style="width:52px;height:52px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="clock" style="width:26px;height:26px;color:#F36F21;"></i></div>
+              <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">04</span>
             </div>
+            <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
           </div>
-          <p style="font-size:1rem;color:#1a1a1a;line-height:1.7;margin-bottom:14px;">Legal landscapes evolve rapidly. This snapshot reflects the state as of May 2026.</p>
-          <div style="background:#F0F7FF;border-radius:10px;padding:14px 18px;border-left:3px solid #0066B3;">
-            <div style="font-size:0.78rem;color:#0066B3;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:6px;">Real Example</div>
-            <p style="font-size:0.95rem;color:#000;line-height:1.6;margin:0;">🇵🇭 <strong>Philippines</strong> raised age of consent from 12 to 16 in 2022 (RA 11648). 🇮🇩 <strong>Indonesia</strong> enacted TPKS Sexual Violence Law same year. <em>Pre-2022 dashboards show outdated information.</em></p>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Static Snapshot</h3>
+          <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:22px;margin:0 0 16px 0;">
+            <li>Legal landscapes evolve rapidly</li>
+            <li>Snapshot reflects May 2026 state</li>
+            <li>Case: Philippines / Indonesia 2022 reforms</li>
+          </ul>
+          <div style="display:inline-flex;align-items:center;gap:6px;color:#F36F21;font-size:0.88rem;font-weight:700;">Click for details <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
+        </div>
+
+        <!-- Limitation 05 -->
+        <div class="limitation-card" onclick="openLimitDetail('05')" style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);cursor:pointer;transition:all 0.25s ease;border-top:4px solid #F36F21;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div style="width:52px;height:52px;background:#FFF4EC;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="info" style="width:26px;height:26px;color:#F36F21;"></i></div>
+              <span style="font-size:1.8rem;font-weight:800;color:#F36F21;line-height:1;">05</span>
+            </div>
+            <i data-lucide="arrow-up-right" style="width:20px;height:20px;color:#9CA3AF;"></i>
           </div>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:14px;">Self-Reported Data</h3>
+          <ul style="font-size:1rem;color:#1a1a1a;line-height:1.75;padding-left:22px;margin:0 0 16px 0;">
+            <li>UNESCO profiles rely on government reporting</li>
+            <li>May not reflect classroom reality</li>
+            <li>Cross-verification recommended</li>
+          </ul>
+          <div style="display:inline-flex;align-items:center;gap:6px;color:#F36F21;font-size:0.88rem;font-weight:700;">Click for details <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
         </div>
 
       </div>
-
-      <!-- Bonus: Self-reported data note -->
-      <div style="background:white;border-radius:16px;padding:24px 28px;box-shadow:0 4px 20px rgba(0,0,0,0.06);margin-top:22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;border-left:5px solid #6B6B6B;">
-        <div style="width:48px;height:48px;background:#F3F4F6;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i data-lucide="info" style="width:24px;height:24px;color:#6B6B6B;"></i></div>
-        <div style="flex:1;min-width:280px;">
-          <div style="font-size:0.78rem;color:#6B6B6B;text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:4px;">Additional Note</div>
-          <p style="font-size:0.98rem;color:#000;line-height:1.6;margin:0;"><strong>Self-reported data:</strong> CSE profiles partly depend on government reporting to UNESCO, which may not always reflect classroom reality. Cross-verification with civil society reports recommended for high-stakes decisions.</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -3052,6 +3073,33 @@
       });
       renderMap();
       renderTable();
+    }
+
+    // ============ LIMITATION DETAILS ============
+    const LIMIT_DATA = {
+      '01': { title: 'Law ≠ Practice', body: `<p><strong>Legal existence does not guarantee real-world protection.</strong> Strong laws are necessary but not sufficient for protecting people from harm.</p><div style="background:#FEF2F2;border-left:4px solid #F36F21;padding:18px 22px;border-radius:0 12px 12px 0;margin:20px 0;"><div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:8px;">Real Example</div><p style="font-size:1rem;color:#000;line-height:1.7;margin:0;">🇿🇦 <strong>South Africa</strong> has one of the most comprehensive GBV legal frameworks on the African continent &mdash; including the Domestic Violence Act (1998), Sexual Offences Amendment Act (2007), Protection from Harassment Act (2011), and the National Strategic Plan on GBV (2020-2030).</p><p style="font-size:1rem;color:#000;line-height:1.7;margin:12px 0 0 0;">Yet GBV prevalence remains among the world&rsquo;s highest. UNODC data places South Africa&rsquo;s femicide rate at roughly 5x the global average.</p></div><p><strong>Implication:</strong> Dashboards mapping legal frameworks should always be paired with implementation data, lest &quot;Yes&quot; on paper be mistaken for &quot;Yes&quot; in practice. This dashboard explicitly flags this through caveat fields per country.</p>` },
+      '02': { title: 'Sub-national Variation', body: `<p>Federal or highly decentralized systems create <strong>significant sub-national variation</strong> that is invisible at the national level.</p><div style="background:#FFFBEB;border-left:4px solid #F36F21;padding:18px 22px;border-radius:0 12px 12px 0;margin:20px 0;"><div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:8px;">Real Example</div><p style="font-size:1rem;color:#000;line-height:1.7;margin:0;">🇳🇬 <strong>Nigeria&rsquo;s</strong> VAPP Act (2015) is comprehensive at the federal level &mdash; but only ~15 of 36 states have domesticated it. Some northern Sharia states use alternative frameworks that do not provide equivalent protections.</p><p style="font-size:1rem;color:#000;line-height:1.7;margin:12px 0 0 0;">Similar patterns: 🇮🇩 Indonesia CSE varies dramatically by province (Aceh enforces Sharia). 🇦🇷 Argentina ESI Law implementation varies by provincial education authority.</p></div><p><strong>Implication:</strong> National-level data masks fragmentation. Sub-national analysis is essential for accurate programming.</p>` },
+      '03': { title: 'Definitional Comparability', body: `<p>&ldquo;Age of consent&rdquo; and &ldquo;CSE&rdquo; are <strong>not defined identically across legal systems</strong>. The raw number does not capture nuance.</p><div style="background:#F5F3FF;border-left:4px solid #F36F21;padding:18px 22px;border-radius:0 12px 12px 0;margin:20px 0;"><div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:8px;">Real Example</div><p style="font-size:1rem;color:#000;line-height:1.7;margin:0;">🇦🇷 <strong>Argentina&rsquo;s</strong> age of consent is 13 &mdash; but Article 119 of the Criminal Code adds a critical condition: sexual activity with persons aged 13-15 is lawful <em>only</em> where there is no &ldquo;abuse&rdquo; or &ldquo;taking advantage&rdquo; of the minor&rsquo;s situation.</p><p style="font-size:1rem;color:#000;line-height:1.7;margin:12px 0 0 0;">🇳🇬 <strong>Nigeria&rsquo;s</strong> dual system: 16 (south), puberty-based (north), 18 (federal Child Rights Act). A single number cannot represent this.</p></div><p><strong>Implication:</strong> Numerical comparisons should be paired with contextual notes. This dashboard provides both per country.</p>` },
+      '04': { title: 'Static Snapshot', body: `<p>Legal landscapes <strong>evolve rapidly</strong>. This dashboard reflects information available as of <strong>May 2026</strong>.</p><div style="background:#F0F7FF;border-left:4px solid #F36F21;padding:18px 22px;border-radius:0 12px 12px 0;margin:20px 0;"><div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:8px;">Real Example</div><p style="font-size:1rem;color:#000;line-height:1.7;margin:0;">🇵🇭 <strong>Philippines</strong> raised the age of sexual consent from 12 to 16 in 2022 (Republic Act 11648), ending one of the world&rsquo;s lowest thresholds.</p><p style="font-size:1rem;color:#000;line-height:1.7;margin:12px 0 0 0;">🇮🇩 <strong>Indonesia</strong> enacted UU TPKS (Sexual Violence Crimes Law) in 2022 &mdash; the country&rsquo;s first comprehensive sexual violence legislation.</p><p style="font-size:1rem;color:#000;line-height:1.7;margin:12px 0 0 0;">Dashboards built before 2022 would show outdated information for both.</p></div><p><strong>Implication:</strong> All findings should be checked against the latest legislation before high-stakes use. The dashboard data cutoff is documented.</p>` },
+      '05': { title: 'Self-Reported Data', body: `<p>The dashboard <strong>partly depends on government self-reporting</strong> to UNESCO and other UN bodies. These reports may not always reflect classroom or community-level reality.</p><div style="background:#F3F4F6;border-left:4px solid #F36F21;padding:18px 22px;border-radius:0 12px 12px 0;margin:20px 0;"><div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;margin-bottom:8px;">Example</div><p style="font-size:1rem;color:#000;line-height:1.7;margin:0;">A government may report &ldquo;CSE integrated&rdquo; based on a formal policy, while in practice the curriculum may be optional, poorly resourced, or actively undermined by teacher resistance or community pressure.</p></div><p><strong>Recommendation:</strong> For high-stakes decisions (e.g., programming, funding allocation), cross-reference with civil society reports, IPPF country assessments, and qualitative classroom-level research. This dashboard provides a strong starting point but should not be the sole evidence base.</p>` }
+    };
+
+    function openLimitDetail(id) {
+      const d = LIMIT_DATA[id];
+      if (!d) return;
+      const modal = document.getElementById('countryModal');
+      document.getElementById('modalContent').innerHTML = `
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;padding-bottom:16px;border-bottom:2px solid #F3F4F6;">
+          <div style="width:48px;height:48px;background:#F36F21;border-radius:12px;display:flex;align-items:center;justify-content:center;"><i data-lucide="alert-triangle" style="width:24px;height:24px;color:white;"></i></div>
+          <div>
+            <div style="font-size:0.78rem;color:#F36F21;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Limitation ${id}</div>
+            <h2 style="font-size:1.4rem;font-weight:800;color:#000;">${d.title}</h2>
+          </div>
+        </div>
+        <div style="font-size:1rem;color:#1a1a1a;line-height:1.75;">${d.body}</div>
+      `;
+      modal.classList.add('open');
+      lucide.createIcons();
     }
 
     // ============ INSIGHT / METHOD DETAIL MODALS ============
